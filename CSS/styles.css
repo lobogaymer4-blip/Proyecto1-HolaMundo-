@@ -1,0 +1,23 @@
+/* estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 16px;
+}
+#title {
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+}
+img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin-right: 16px; }
+.img {
+    align-items: center;
+    justify-content: center; 
+    display: flex; }    
+#embebidoframe {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1px; }
