@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--Esto es un Comentario en HTML.(no se ve en la página)-->
+  <html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Hola Mundo!</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <meta name="description" content="Evalúa mi primer proyecto trabajando con los conceptos basicos para el front end de una pagina." />
+    <meta content="Proyecto Hola Mundo" property="og:title" />
+    <meta property="og:type" content="website" />
+    <meta content="IMGs/FotoDune.webp" property="og:image" />
+    </head>
+    <body>
+      <main>
+        <section><h1>Bienvenido a mi Proyecto "Hola Mundo!"(h1)</h1>
+          <p>Mi nombre es Matias y este es mi primer proyecto sin guíarme de FreeCodeCamp (en paralelo mientras estudio)</p>
+          <h2>Estoy aprendiendo lo básico de HTML y CSS</h2>
+          <p>Estos son los 6 tamaños de títulos:</p>
+          <!-- usé una lista desordenada para mostrarlos -->
+          <ul>
+            <li><h1>Título nivel 1 (h1)</h1></li>
+            <li><h2>Título nivel 2 (h2)</h2></li>
+            <li><h3>Título nivel 3 (h3)</h3></li>
+            <li><h4>Título nivel 4 (h4)</h4></li>
+            <li><h5>Título nivel 5 (h5)</h5></li>
+            <li><h6>Título nivel 6 (h6)</h6></li>
+          </ul>
+          <!-- agregué una imagen DENTRO de figure, se suele hacer para conjuntar imágenes y figcaption para la descripción o subtítulo. -->
+          <figure>
+            <img class="img" src="IMGs/FotoDune.webp" alt="Foto de Dune" />
+            <figcaption>Dune es el padre de la ciencia ficción moderna.(figcaption)</figcaption>
+            <input type="image" alt="Descriptive text goes here" src="IMGs/upscalemedia-transformed (1).jpeg" width="500" height="400"  />
+          </figure>
+        <section>
+          <h2>Este es un título dentro de un elemento sección (section)</h2>
+          <p> este es un párrafo dentro de un section</p>
+        </section>
+        <div>
+          <h2>Este es un titulo dentro de un elemento div(contenedor genérico).</h2>
+          <p>Este párrafo se encuentra dentro de un div.</p>
+        </div>
+        <section>
+          <h2>Elementos de formato texto comunes</h2>
+          <p>Este es un parrafo de ejemplo para mostrar <em>énfasis</em> y como usár la <strong>negrita</strong>.</p>
+          <p>También puedo usar <mark>resaltado</mark> y <small>texto pequeño</small>.</p>
+          <p>Además de <del>texto tachado</del> y <ins>texto subrayado</ins>.</p>
+          <p>Y por último, puedo usar <sub>subíndice</sub> y <sup>superíndice</sup>.</p>
+          <h2>Enlaces por anclaje</h2>
+          <p>Para enlaces se usa elementos ancla &lt;a&gt; con un atributo href: <a href="https://es.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">Wikipedia HTML</a> y a <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener">FreeCodeCamp</a>.</p>
+          <p>Se usan tambien los atributos target="blank" y rel="noopener" para controlar comportamiento y seguridad respectivamente.</p>
+        </section>
+        <section>
+          <h2>Interactividad con JavaScript</h2>
+          <p id="mensaje">Este es el mensaje original.</p>
+          <button onclick="cambiarMensaje()">Haz clic para cambiar el mensaje</button>
+          <script src="JS/main.js"></script>
+        </section>
+        <section id="embebidoframe">
+          <h2>Contenido embebido con iframe</h2>
+          <p>Con el elemento iframe se puede embeber contenido externo.</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9mF6oTRhrqw" title="Video de ejemplo" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="300" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+          <iframe id="miIframe" src="Nuevo Documento de texto.txt" width="200" height="200px"></iframe>
+        </section>
+      </main>
+      <footer>
+        <p>Proyecto de programación HTML y CSS - Matias</p>
+    </body>
+  </html>
