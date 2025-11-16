@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--Esto es un Comentario en HTML.(no se ve en la página)-->
+  <html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Hola Mundo!</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="IMGs/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="IMGs/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="IMGs/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="Docs/favicon_io/site.webmanifest">
+    <meta name="description" content="Evalúa mi primer proyecto trabajando con los conceptos basicos para el front end de una pagina." />
+    <meta content="Proyecto Hola Mundo" property="og:title" />
+    <meta property="og:type" content="website" />
+    <meta content="IMGs/FotoDune.webp" property="og:image" />
+    </head>
+    <body>
+      <header>
+        <h1>Bienvenido a mi Proyecto "Hola Mundo!"(h1)</h1>
+      </header>
+        <div class="contenedor">
+          <aside class="sidebar">
+          </aside>
+        <main>
+        <section>
+          <h2>Estoy aprendiendo lo básico de HTML y CSS</h2>
+          <p>Mi nombre es Matias y este es mi primer proyecto sin guíarme de FreeCodeCamp (en paralelo mientras estudio)</p>
+          <p>Estos son los 6 tamaños de títulos:</p>
+          <!-- usé una lista desordenada para mostrarlos -->
+          <ul>
+            <li><p class="h1-simulacion">Título nivel 1 (h1)</p></li>
+            <li><h2>Título nivel 2 (h2)</h2></li>
+            <li><h3>Título nivel 3 (h3)</h3></li>
+            <li><h4>Título nivel 4 (h4)</h4></li>
+            <li><h5>Título nivel 5 (h5)</h5></li>
+            <li><h6>Título nivel 6 (h6)</h6></li>
+          </ul>
+          <!-- agregué una imagen DENTRO de figure, se suele hacer para conjuntar imágenes y figcaption para la descripción o subtítulo. -->
+          <figure>
+            <img class="img" src="IMGs/desplegadas/Copilot_20251114_071812.png" alt="Foto de Dune" width="500" height="400"/>
+            <figcaption>Dune es el padre de la ciencia ficción moderna.(figcaption)</figcaption>
+            <input id="img" type="image" alt="Descriptive text goes here" src="IMGs/desplegadas/upscalemedia-transformed (1).jpeg" width="500" height="400"  />
+            <figcaption>Imagen como botón de envío &lt;input type="image"&gt; (De todas formas, no reemplaza a &lt;img&gt;)</figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>Este es un título dentro de un elemento sección (section)</h2>
+          <p> este es un párrafo dentro de un section</p>
+        </section>
+        <div>
+          <h2>Este es un titulo dentro de un elemento div.</h2>
+          <p>Este párrafo se encuentra dentro de un div. Este no tiene función semántica. No ayuda al SEO. por eso lo estoy usando para desplegar la barra lateral.</p>
+        </div>
+        <section>
+          <h2>Elementos de formato texto comunes</h2>
+          <p>Este es un parrafo de ejemplo para mostrar <em>énfasis</em> y como usár la <strong>negrita</strong>.</p>
+          <p>También puedo usar <mark>resaltado</mark> y <small>texto pequeño</small>.</p>
+          <p>Además de <del>texto tachado</del> y <ins>texto subrayado</ins>.</p>
+          <p>Y por último, puedo usar <sub>subíndice</sub> y <sup>superíndice</sup>.</p>
+          <h2>Enlaces por anclaje</h2>
+          <p>Para enlaces se usa elementos ancla &lt;a&gt; con un atributo href: <a href="https://es.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">Wikipedia HTML</a> y a <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener">FreeCodeCamp</a>.</p>
+          <p>Se usan tambien los atributos target="blank" y rel="noopener" para controlar comportamiento y seguridad respectivamente.</p>
+        </section>
+        <section>
+          <h2>Interactividad con JavaScript</h2>
+          <p id="mensaje">Este es el mensaje original.</p>
+          <button onclick="cambiarMensaje()">Haz clic para cambiar el mensaje</button>
+          <script src="JS/main.js"></script>
+        </section>
+        <section class="apilar">
+          <h2>Contenido embebido con iframe</h2>
+          <p>Con el elemento iframe se puede embeber contenido externo.</p>
+          <iframe src="https://www.youtube.com/embed/9mF6oTRhrqw" width="560" height="315" title="Video de ejemplo" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="300" height="300" title="mapa de ejemplo" style="border:0;" allowfullscreen loading="lazy"></iframe>
+          <iframe src="Docs/programás-con-notepad.txt" width="200" height="200px" title="notepad de ejemplo"></iframe>
+        </section>
+        <section class="apilar">
+          <h2>Multimedia con &lt;audio&gt; y &lt;video&gt;</h2>
+          <audio src="/Audio/monëy so big instrumental - sped up.mp3" title="Monëy So Big Instrumental" loop controls muted></audio>
+          <video  aria-label="ChisteDeProgramador" controls muted>
+            <source src="Video/Programar-en-C-VS-en-Python.mp4" type="video/mp4">
+            <track src="Docs/subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+            Tu navegador no soporta el elemento video.
+          </video>
+        </section>
+        <section style="margin-top: 30px; gap: 20px;" class="apilar">
+          <p><a href="https://freecodecamp.org" title="sitio oficial de freeCodeCamp" target="_self">Visit freeCodeCamp</a>(con target="_self", opción default)</p>
+          <p><a href="https://freecodecamp.org" title="sitio oficial de freeCodeCamp" target="_blank">Visit freeCodeCamp</a>(con target="_blank")</p>
+          <iframe src="Docs/Ejemplo-parent-top.html" title="html para probar _parent y _top" width="500" height="500px"></iframe>
+        </section>
+        <article id="article">
+          <h2>Elemento article</h2>
+          <p>El elemento &lt;article&gt; representa una composición independiente en un documento, página web, aplicación o sitio, destinada a ser distribuida o reutilizada de forma independiente.</p>
+        </article>
+      </main>
+      </div>
+      <footer>
+        <p>Proyecto de programación HTML y CSS - Matias</p>
+      </footer>
+    </body>
+  </html>
