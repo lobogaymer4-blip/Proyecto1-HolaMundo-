@@ -1,9 +1,13 @@
 function cambiarMensaje() {
-      document.getElementById("mensaje").textContent = "¡El mensaje ha cambiado con JavaScript!(Usando código externo)";
-    }
-
-const iframe = document.getElementById("miIframe");
-const doc = iframe.contentDocument || iframe.contentWindow.document;
-
-// Ejemplo: cambiar el texto de un párrafo dentro del iframe
-doc.querySelector("p").textContent = "Texto modificado desde el padre";
+  const el = document.getElementById("mensaje-texto");
+  if (!el) return;
+  
+  // Alterna entre dos mensajes
+  if (el.classList.contains('recuadro')) {
+    el.textContent = "Este es el mensaje original.";
+    el.classList.remove('recuadro');
+  } else {
+    el.textContent = "¡El mensaje ha cambiado con JavaScript!(Usando código externo)";
+    el.classList.add('recuadro');
+  }
+}

@@ -21,12 +21,31 @@
       </header>
         <div class="contenedor">
           <aside class="sidebar">
+            <nav class="navegacion">
+            <ul class="navegacion">
+              <li><a href="#titulos">Titulos </a></li>
+              <li><a href="#img">Imagen por &lt;img&gt;</a></li>
+              <li><a href="#imginpt">Imagen por  &lt;input type="image"&gt;</a></li>
+              <li><a href="#seccion"> &lt;section &gt;</a></li>
+              <li><a href="#div"> &lt;div &gt;</a></li>
+              <li><a href="#formatel">elementos de formato</a></li>
+              <li><a href="#anclaje">anclas</a></li>
+              <li><a href="#mensaje">Ir al mensaje interactivo</a></li>
+              <li><a href="#embiframe">Embebidos en iframes</a></li>
+              <li><a href="#multimedia">Multimedia</a></li>
+              <li><a href="#targets">Uso de targets</a></li>
+              <li><a href="#article">Ir al artículo</a></li>
+              <li><a href="#img">Imagenes</a></li>
+              <li><a href="#img">Imagenes</a></li>
+              <li><a href="#img">Imagenes</a></li>
+            </ul>
+          </nav>
           </aside>
         <main>
         <section>
-          <h2>Estoy aprendiendo lo básico de HTML y CSS</h2>
+          <h2 class="subrayado">Estoy aprendiendo lo básico de HTML y CSS</h2>
           <p>Mi nombre es Matias y este es mi primer proyecto sin guíarme de FreeCodeCamp (en paralelo mientras estudio)</p>
-          <p>Estos son los 6 tamaños de títulos:</p>
+          <section id="titulos"><h2 class="subrayado">Estos son los 6 tamaños de títulos:</h2>
           <!-- usé una lista desordenada para mostrarlos -->
           <ul>
             <li><p class="h1-simulacion">Título nivel 1 (h1)</p></li>
@@ -36,63 +55,246 @@
             <li><h5>Título nivel 5 (h5)</h5></li>
             <li><h6>Título nivel 6 (h6)</h6></li>
           </ul>
+          </section>
           <!-- agregué una imagen DENTRO de figure, se suele hacer para conjuntar imágenes y figcaption para la descripción o subtítulo. -->
           <figure>
-            <img class="img" src="IMGs/desplegadas/Copilot_20251114_071812.png" alt="Foto de Dune" width="500" height="400"/>
+            <img id="img" class="img" src="IMGs/desplegadas/Copilot_20251114_071812.png" alt="Foto de Dune" width="500" height="400"/>
             <figcaption>Dune es el padre de la ciencia ficción moderna.(figcaption)</figcaption>
-            <input id="img" type="image" alt="Descriptive text goes here" src="IMGs/desplegadas/upscalemedia-transformed (1).jpeg" width="500" height="400"  />
+            <input id="imginpt" class="img" type="image" alt="Descriptive text goes here" src="IMGs/desplegadas/upscalemedia-transformed (1).jpeg" width="500" height="400"  />
             <figcaption>Imagen como botón de envío &lt;input type="image"&gt; (De todas formas, no reemplaza a &lt;img&gt;)</figcaption>
           </figure>
         </section>
-        <section>
-          <h2>Este es un título dentro de un elemento sección (section)</h2>
-          <p> este es un párrafo dentro de un section</p>
+        <section id="seccion">
+          <h2 class="subrayado">Este es un título dentro de un elemento sección (section)</h2>
+          <p>Este es un párrafo dentro de un <strong>section</strong>. Es un elemento de semántica importante para la estructura de lo que se <strong>escribe</strong></p>
         </section>
-        <div>
-          <h2>Este es un titulo dentro de un elemento div.</h2>
-          <p>Este párrafo se encuentra dentro de un div. Este no tiene función semántica. No ayuda al SEO. por eso lo estoy usando para desplegar la barra lateral.</p>
+        <div id="div">
+          <h2 class="subrayado">Este es un titulo dentro de un elemento div.</h2>
+          <p>Este párrafo se encuentra dentro de un div. Este no tiene función semántica. No ayuda al SEO. Por eso lo estoy usando para desplegar la barra lateral. El </p>
         </div>
         <section>
-          <h2>Elementos de formato texto comunes</h2>
+          <section id="formatel">
+          <h2 class="subrayado">Elementos de formato texto comunes</h2>
           <p>Este es un parrafo de ejemplo para mostrar <em>énfasis</em> y como usár la <strong>negrita</strong>.</p>
-          <p>También puedo usar <mark>resaltado</mark> y <small>texto pequeño</small>.</p>
           <p>Además de <del>texto tachado</del> y <ins>texto subrayado</ins>.</p>
           <p>Y por último, puedo usar <sub>subíndice</sub> y <sup>superíndice</sup>.</p>
-          <h2>Enlaces por anclaje</h2>
+          </section>
+          <section id="anclaje">
+          <h2 class="subrayado">Enlaces por anclaje</h2>
           <p>Para enlaces se usa elementos ancla &lt;a&gt; con un atributo href: <a href="https://es.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">Wikipedia HTML</a> y a <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener">FreeCodeCamp</a>.</p>
-          <p>Se usan tambien los atributos target="blank" y rel="noopener" para controlar comportamiento y seguridad respectivamente.</p>
+          <p>Se usan tambien los atributos target="_blank" y rel="noopener" para controlar comportamiento y seguridad respectivamente.</p>
+          </section>
         </section>
-        <section>
-          <h2>Interactividad con JavaScript</h2>
-          <p id="mensaje">Este es el mensaje original.</p>
+        <section id="mensaje">
+          <h2 class="subrayado">Interactividad con JavaScript</h2>
+          <p id="mensaje-texto">Este es el mensaje original.</p>
           <button onclick="cambiarMensaje()">Haz clic para cambiar el mensaje</button>
           <script src="JS/main.js"></script>
         </section>
-        <section class="apilar">
-          <h2>Contenido embebido con iframe</h2>
+        <section id="embiframe" class="apilar">
+          <h2 class="subrayado">Contenido embebido con iframe</h2>
           <p>Con el elemento iframe se puede embeber contenido externo.</p>
           <iframe src="https://www.youtube.com/embed/9mF6oTRhrqw" width="560" height="315" title="Video de ejemplo" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="300" height="300" title="mapa de ejemplo" style="border:0;" allowfullscreen loading="lazy"></iframe>
           <iframe src="Docs/programás-con-notepad.txt" width="200" height="200px" title="notepad de ejemplo"></iframe>
         </section>
-        <section class="apilar">
-          <h2>Multimedia con &lt;audio&gt; y &lt;video&gt;</h2>
-          <audio src="/Audio/monëy so big instrumental - sped up.mp3" title="Monëy So Big Instrumental" loop controls muted></audio>
-          <video  aria-label="ChisteDeProgramador" controls muted>
+        <section id="multimedia" class="apilar">
+          <h2 class="subrayado">Multimedia con &lt;audio&gt; y &lt;video&gt;</h2>
+          <audio src="Audio/monëy so big instrumental - sped up.mp3" title="Monëy So Big Instrumental" loop controls muted></audio>
+          <video width="auto" height="auto" aria-label="ChisteDeProgramador" controls muted>
             <source src="Video/Programar-en-C-VS-en-Python.mp4" type="video/mp4">
             <track src="Docs/subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
             Tu navegador no soporta el elemento video.
           </video>
         </section>
-        <section style="margin-top: 30px; gap: 20px;" class="apilar">
+        <section id="targets" class="apilar">
+          <h2 class="subrayado">Enlaces con diferentes targets</h2>
           <p><a href="https://freecodecamp.org" title="sitio oficial de freeCodeCamp" target="_self">Visit freeCodeCamp</a>(con target="_self", opción default)</p>
           <p><a href="https://freecodecamp.org" title="sitio oficial de freeCodeCamp" target="_blank">Visit freeCodeCamp</a>(con target="_blank")</p>
           <iframe src="Docs/Ejemplo-parent-top.html" title="html para probar _parent y _top" width="500" height="500px"></iframe>
         </section>
         <article id="article">
-          <h2>Elemento article</h2>
+          <h2 class="subrayado">Elemento article</h2>
           <p>El elemento &lt;article&gt; representa una composición independiente en un documento, página web, aplicación o sitio, destinada a ser distribuida o reutilizada de forma independiente.</p>
         </article>
+        <section>
+          <h2 class="subrayado">A partir de aquí empiezan las clases de semántica de HTML</h2>
+        </section>
+        <section>
+          <h3>
+            Importancia de la semántica</h3>
+          <p><span class="pregunta">¿Por qué respetar la semántica?:</span></p>
+          <p class="respuesta">Respetar la semántica permite que el contenido tenga un significado claro y consistente, lo que facilita que los lectores de pantalla, buscadores y otros sistemas comprendan mejor la información. En otras palabras, no es solo cómo se ve, sino qué representa.</p>
+          <p><span class="pregunta">¿Por qué es importante tener una buena jerarquía estructural?:</span></p>
+          <p class="respuesta">Una jerarquía bien definida asegura que el documento esté organizado lógicamente, ayudando a los usuarios a navegar con facilidad y a los motores de búsqueda a interpretar la relevancia de cada sección. Es como darle un mapa claro al navegador y al lector sobre qué es principal y qué es secundario.</p>
+          <p><span class="pregunta">¿Cuál es la diferencia entre HTML presentacional y semántico?</span></p>
+          <p class="respuesta">HTML presentacional se enfoca en cómo se ve el contenido, usando clases y CSS o JavaScript, mientras que HTML semántico utiliza etiquetas que describen el significado del contenido, mejorando la accesibilidad y la estructura del documento.</p>
+        </section>
+        <section>
+          <h2 class="subrayado">Elemento de la sección de navegación &lt;nav&gt;</h2>
+          <p>Mi sección de navegación esta representada en la barra lateral izquierda.</p>
+          <h2 class="subrayado">Elementos presentacionales</h2>
+           
+      <thead> <table id="table">
+        <tr>
+          <th>Elemento</th>
+          <th>Descripción</th>
+          <th>Uso original</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&lt;b&gt;</td>
+          <td>Texto en negrita</td>
+          <td>Resaltar visualmente, sin semántica</td>
+        </tr>
+        <tr>
+          <td>&lt;i&gt;</td>
+          <td>Texto en cursiva</td>
+          <td>Indicar estilo distinto (ej. extranjerismos)</td>
+        </tr>
+        <tr>
+          <td>&lt;u&gt;</td>
+          <td>Texto subrayado</td>
+          <td>Subrayar contenido, sin semántica</td>
+        </tr>
+        <tr>
+          <td>&lt;s&gt;</td>
+          <td>Texto tachado</td>
+          <td>Mostrar texto obsoleto o irrelevante</td>
+        </tr>
+        <tr>
+          <td>&lt;big&gt;</td>
+          <td>Texto más grande</td>
+          <td>Aumentar tamaño de fuente</td>
+        </tr>
+        <tr>
+          <td>&lt;small&gt;</td>
+          <td>Texto más pequeño</td>
+          <td>Reducir tamaño de fuente</td>
+        </tr>
+        <tr>
+          <td>&lt;font&gt;</td>
+          <td>Definir tipografía, color y tamaño</td>
+          <td>Controlar estilo del texto (obsoleto en HTML5)</td>
+        </tr>
+        <tr>
+          <td>&lt;center&gt;</td>
+          <td>Centrar contenido</td>
+          <td>Alinear texto o elementos al centro</td>
+        </tr>
+        <tr>
+          <td>&lt;strike&gt;</td>
+          <td>Texto tachado (obsoleto, reemplazado por &lt;s&gt;)</td>
+          <td>Mostrar texto eliminado visualmente</td>
+        </tr>
+        <tr>
+          <td>&lt;tt&gt;</td>
+          <td>Texto monoespaciado (teletipo)</td>
+          <td>Simular estilo de máquina de escribir</td>
+        </tr>
+        <tr>
+          <td>&lt;blink&gt;</td>
+          <td>Texto parpadeante (obsoleto)</td>
+          <td>Efecto visual llamativo</td>
+        </tr>
+        <tr>
+          <td>&lt;marquee&gt;</td>
+          <td>Texto desplazándose (obsoleto)</td>
+          <td>Animación de texto en movimiento</td>
+        </tr>
+      </tbody>
+      </table>
+      <p id="entrecuadro">Los elementos presentacionales han quedado obsoletos con el uso de CSS para el estilo visual. Sin embargo algunos aún tienen una pequeña utilidad semántica, al permitir indicar matices o intenciones específicas.</p>
+      <table id="table">
+      <thead>
+        <tr>
+          <th>Elemento</th>
+          <th>Peso semántico</th>
+          <th>Utilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="Resaltar">
+          <td>&lt;b&gt;</td>
+          <td>Bajo / nulo</td>
+          <td>Solo pone texto en negrita. haciendolo resaltar para leerlo, más <strong>no indica importancia</strong> (para eso está &lt;strong&gt;).</td>
+        </tr>
+        <tr id="Resaltar">
+          <td>&lt;i&gt;</td>
+          <td>Bajo / nulo</td>
+          <td>Solo cursiva. Puede indicar un tono distinto, extranjerismos, términos técnicos, pensamientos internos o nombres científicos. <strong>No indica énfasis</strong> (para eso está &lt;em&gt;).</td>
+        </tr>
+        <tr>
+          <td>&lt;u&gt;</td>
+          <td>Nulo</td>
+          <td>Subraya texto, sin significado semántico.</td>
+        </tr>
+        <tr id="Resaltar">
+          <td>&lt;s&gt;</td>
+          <td>Bajo</td>
+          <td>Indica texto obsoleto o irrelevante,<strong> pero sin metadatos.</strong> Menor que &lt;del&gt;.</td>
+        </tr>
+        <tr>
+          <td>&lt;big&gt;</td>
+          <td>Nulo</td>
+          <td>Solo aumenta el tamaño de fuente.</td>
+        </tr>
+        <tr id="Resaltar">
+          <td>&lt;small&gt;</td>
+          <td>Bajo</td>
+          <td>Reduce tamaño de fuente. En HTML5 se le da un matiz semántico leve (nota secundaria).</td>
+        </tr>
+        <tr>
+          <td>&lt;font&gt;</td>
+          <td>Nulo</td>
+          <td>Controlaba tipografía, color y tamaño. Obsoleto en HTML5.</td>
+        </tr>
+        <tr>
+          <td>&lt;center&gt;</td>
+          <td>Nulo</td>
+          <td>Solo alineaba contenido al centro. Obsoleto.</td>
+        </tr>
+        <tr>
+          <td>&lt;strike&gt;</td>
+          <td>Nulo</td>
+          <td>Tachado visual, reemplazado por &lt;s&gt;.</td>
+        </tr>
+        <tr>
+          <td>&lt;tt&gt;</td>
+          <td>Nulo</td>
+          <td>Texto monoespaciado, simulaba estilo de máquina de escribir. Obsoleto.</td>
+        </tr>
+        <tr>
+          <td>&lt;blink&gt;</td>
+          <td>Nulo</td>
+          <td>Texto parpadeante, nunca estándar.</td>
+        </tr>
+        <tr>
+          <td>&lt;marquee&gt;</td>
+          <td>Nulo</td>
+          <td>Texto en movimiento, no estándar.</td>
+        </tr>
+      </tbody>
+      </table>
+      </section>
+        <section>
+<!-- Aquí <del> indica que el texto fue eliminado/modificado en el documento -->
+          <h2 class="subrayado">Ejemplo con &lt;del&gt; (texto eliminado en edición)</h2>
+            <p class="ejemplo-s-del">
+    La reunión será 
+            <del cite="https://example.com/reunion-info" datetime="2025-11-17T10:00:00Z">mañana a las 10</del> 
+    a las 11.
+  </p>
+  <p>Con registro de cambio gracias al mayor valor semántico de &lt;del&gt;.</p>
+<!-- Aquí <s> indica que el precio anterior ya no es válido -->
+          <h2 class="subrayado">Ejemplo con &lt;s&gt; (texto irrelevante)</h2>
+            <p class="ejemplo-s-del">
+              Precio original: <s>$100</s>  
+              Precio actual: $80
+            </p>
+            <p>Sin necesidad de registrar un cambio, menor valor semántico de &lt;s&gt;.</p>
+        </section>
       </main>
       </div>
       <footer>

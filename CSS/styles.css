@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 16px;
-    background-color: rgb(82, 82, 161);
+    background-color: #fff0ad;
 }
 #title {
     color: rgb(255, 0, 0);
@@ -13,11 +13,12 @@ img {
     height: auto;
     display: block;
     margin-right: 16px; }
-.img {
+.img { 
     align-items: center;
     justify-content: center; 
     display: flex;
-    margin-top: 50px;}    
+    margin-top: 50px;
+    margin-bottom: 10px;}    
 .apilar {
       display: flex;
       flex-direction: column;
@@ -38,11 +39,120 @@ img {
   width: 200px;       /* ancho fijo */
   background: #f0f0f0; /* color de fondo */
   padding: 10px;
-  background-color: rgb(11, 11, 124);
+  background-color: rgba(177, 179, 87, 0.767);
   margin-right: 20px;
 }
 
 .contenido {
   flex: 1;            /* ocupa el resto del espacio */
   padding: 20px;
+}
+.respuesta { 
+  text-indent: 20px; 
+  margin-left: 30px; 
+}
+.pregunta { 
+  font-weight: bold; 
+}
+.subrayado {
+  text-decoration: underline;
+  color:lch(29.44% 53.61 291.15);
+}
+.recuadro {
+  background-color: rgba(0, 255, 76, 0.9);
+    color: #000000;                                  
+    padding: 8px 12px;
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 6px rgba(1, 255, 43, 0.15);
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 12px rgb(98, 255, 124);
+}
+#mensaje {
+    transform: translateY(-2px);
+}
+.ejemplo-s-del {
+    background-color: rgba(255, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-style: italic;
+    width: fit-content
+}
+#table {
+  border-collapse: collapse; /* une los bordes de celdas adyacentes */
+  border: 1px solid #000;
+  background-color: bisque;
+}
+
+#table td, #table th {
+  padding: 8px;
+  border: 1px solid #000;
+}
+#Resaltar {
+  background-color: rgba(156, 219, 255, 0.699);
+}
+#entrecuadro {
+  background-color: rgba(255, 255, 0, 0.397);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+section {
+  scroll-margin-top: 50vh; /* deja el elemento 50% de la altura visible arriba */
+}
+
+h2, h3 {
+  scroll-margin-top: 50vh; /* también para encabezados que sean destinos de anclas */
+}
+.navegacion {
+  position: sticky; /* hace que la barra lateral sea pegajosa */
+  top: 10px;
+  display: block;
+}
+
+.navegacion a {
+  display: block;        /* cada enlace ocupa su propia línea */
+  margin-bottom: 12px;   /* espacio entre enlaces */
+  padding: 8px 0;        /* espacio interno arriba/abajo */
+  text-decoration: none; /* quita el subrayado */
+  color: #333;           /* color del texto */
+}
+.navegacion a:hover {
+  color: #000;           /* opcional: color al pasar el mouse */
+  text-decoration: underline;
+}
+section:target {
+  background-color: rgba(0, 255, 76, 0.1);
+  border-left: 4px solid rgb(0, 255, 76); /* verde consistente */
+  padding-left: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 76, 0.3);
+  transition: all 0.4s ease;
+}
+
+/* Agrega estas reglas para otros elementos con ID */
+h2:target, h3:target {
+  background-color: rgba(0, 255, 76, 0.2);
+  padding: 12px;
+   border-left: 4px solid rgb(0, 255, 76); /* verde consistente */
+  padding-left: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 76, 0.3);
+  transition: all 0.4s ease;
+}
+
+img:target, figure:target, div:target, p:target, input:target {
+  outline: 4px solid rgb(0, 255, 76); /* verde consistente */
+  box-shadow: 0 0 20px rgba(0, 255, 76, 0.3);
+  transition: all 0.4s ease;
+}
+
+article:target {
+  background-color: rgba(0, 255, 76, 0.1);
+  border-left: 4px solid rgb(0, 255, 76); /* verde consistente */
+  padding-left: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 76, 0.3);
+  transition: all 0.4s ease;
 }
