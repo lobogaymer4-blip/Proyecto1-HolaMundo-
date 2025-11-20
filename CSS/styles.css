@@ -17,7 +17,7 @@ img {
     align-items: center;
     justify-content: center; 
     display: flex;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 10px;}    
 .apilar {
       display: flex;
@@ -70,7 +70,7 @@ img {
     transition: transform 0.2s ease;
     box-shadow: 0 4px 12px rgb(98, 255, 124);
 }
-#mensaje {
+.mensaje {
     transform: translateY(-2px);
 }
 .ejemplo-s-del {
@@ -81,17 +81,17 @@ img {
     font-style: italic;
     width: fit-content
 }
-#table {
+.table {
   border-collapse: collapse; /* une los bordes de celdas adyacentes */
   border: 1px solid #000;
   background-color: bisque;
 }
 
-#table td, #table th {
+.table td, .table th {
   padding: 8px;
   border: 1px solid #000;
 }
-#Resaltar {
+.Resaltar {
   background-color: rgba(156, 219, 255, 0.699);
 }
 #entrecuadro {
@@ -155,4 +155,26 @@ article:target {
   padding-left: 16px;
   box-shadow: 0 0 20px rgba(0, 255, 76, 0.3);
   transition: all 0.4s ease;
+}
+.interlineado dt {
+  margin-top: 16px;      /* espacio arriba de cada término */
+  margin-bottom: 8px;    /* espacio debajo del término */
+  font-weight: bold;     /* opcional: hace los términos más visibles */
+}
+
+.interlineado dd {
+  margin-left: 24px;     /* sangría para las definiciones */
+  margin-bottom: 16px;   /* espacio entre definiciones */
+  line-height: 1.6;      /* mayor altura de línea para mejor legibilidad */
+}
+
+.interlineado {
+  margin-top: 20px;      /* espacio arriba de toda la lista */
+  margin-bottom: 20px;   /* espacio debajo de toda la lista */
+}
+#mensaje {
+  width: 100%;
+  min-height: 100px;
+  max-width: 500px;
+  resize: vertical; /* permite redimensionar solo verticalmente */
 }
