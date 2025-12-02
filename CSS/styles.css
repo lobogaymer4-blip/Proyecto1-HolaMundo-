@@ -3,6 +3,17 @@ body {
   font-family: Arial, sans-serif;
   margin: 16px;
   background-color: #fff0ad;
+  color: #660000;
+}
+
+h1 {
+  color: #000000;
+  /* negro para títulos */
+}
+
+a {
+  color: #003366;
+  /* azul marino para enlaces */
 }
 
 img {
@@ -290,7 +301,7 @@ article:target {
 }
 
 pre {
-  background-color: #f4f4f4;
+  background-color: #1a1a1a;
   border-left: 4px solid rgb(0, 255, 76);
   padding: 16px;
   margin: 16px 0;
@@ -311,9 +322,9 @@ code {
 }
 
 pre code {
-  background-color: transparent;
+  background-color: #1a1a1a;
   padding: 0;
-  color: #333;
+  color: #ffffff;
 }
 
 /* Mejora visual de listas dentro de secciones */

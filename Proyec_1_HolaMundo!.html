@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="es-AR">
 <!--Este es el lenguaje elegido.-->
 
 <head>
@@ -64,17 +64,18 @@
     <h1>Bienvenido a mi Proyecto "Hola Mundo!"(h1)</h1>
   </header>
 
-  <div aria-label="Contenedor principal" class="contenedor">
+  <div class="contenedor">
     <!-- Contenedor principal que incluye barra lateral y contenido principal -->
     <!-- Los elementos div carecen de significado semántico, por eso usé roles y etiquetas ARIA para mejorar la accesibilidad -->
     <!-- Se usa <div> para agrupar elementos que no tienen un significado semántico específico, como contenedores o para aplicar estilos -->
     <!-- El atributo aria-label proporciona una etiqueta accesible para el contenedor -->
 
-    <aside class="sidebar">
+    <aside class="sidebar" aria-labelledby="Barranav">
       <!-- El elemento <aside> representa una sección de la página que está relacionada con el contenido principal, pero que puede ser considerada separada o complementaria -->
       <!-- Usé aside para la barra lateral de navegación, pero este elemento puede ser usado para cualquier contenido que sea tangencialmente relacionado y/o que puede ser entendido por si solo-->
+      <!-- El atributo aria-labelledby proporciona una etiqueta accesible para la barra lateral -->
 
-      <nav aria-label="índice de contenidos" class="navegacion">
+      <nav id="Barranav" aria-label="índice de contenidos" class="navegacion">
         <!-- El elemento <nav> define un conjunto de enlaces de navegación -->
         <!-- el atributo aria-label proporciona una etiqueta accesible para el conjunto de enlaces -->
 
@@ -672,10 +673,10 @@
       <section id="formulario">
         <!-- Esta sección muestra un formulario de contacto básico -->
 
-        <h2 class="subrayado">Formulario de contacto básico</h2>
+        <h2 class="subrayado" id="formulariobas">Formulario de contacto básico</h2>
         <p>Se usa &lt;form&gt; para crear formularios y agrupar los inputs relacionados, dandoles un tipo
           (type="text/email/submit") y se asocia con etiquetas &lt;label&gt;.</p>
-        <form method="value-goes-here" action="url-goes-here">
+        <form method="value-goes-here" action="url-goes-here" aria-labelledby="formulariobas">
           <!-- El atributo method especifica el método HTTP para enviar los datos (GET o POST) -->
           <!-- El atributo action especifica la URL donde se enviarán los datos del formulario -->
 
@@ -721,7 +722,7 @@
               </pre>
             </li>
             <li>
-              <form action="/enviar" method="POST">
+              <form aria-label="Formulario de ejemplo" action="/enviar" method="POST">
                 <!-- Ejemplo completo de formulario con distintos tipos de inputs -->
                 <!-- El atributo action especifica la URL donde se enviarán los datos del formulario -->
                 <!-- El atributo method especifica el método HTTP para enviar los datos (GET o POST) -->
@@ -732,11 +733,12 @@
                   <legend>Distintos tipos de botones:</legend>
                   <!-- El elemento legend proporciona un título para el grupo de inputs -->
 
-                  <label for="nombre">Nombre(requerido):</label>
-                  <!-- El atributo for en label debe coincidir con el id del input asociado -->
+                  <label>Nombre(requerido):
+                    <!-- El atributo for en label debe coincidir con el id del input asociado -->
 
-                  <input placeholder="Nombre de usuario" type="text" id="nombre" name="nombre" aria-required="true"
-                    required aria-describedby="nombre-help">
+                    <input placeholder="Nombre de usuario" type="text" id="nombre" name="nombre" aria-required="true"
+                      required aria-describedby="nombre-help"><small id="nombre-help">Mínimo 3
+                      caracteres</small></label><br>
                   <!-- El atributo placeholder muestra un texto guía dentro del campo -->
                   <!-- El atributo type define el tipo de campo (text, email, password, date, radio, checkbox, file) -->
                   <!-- El atributo id sirve para hacer que el label se asocie correctamente con el input -->
@@ -744,8 +746,6 @@
                   <!-- El atributo aria-required indica a los lectores de pantalla que el campo es obligatorio, pero no se usa ambos atributos (aria-required y required) porque es redundante (required ya le indica por si solo al lector de pantalla)-->
                   <!-- El atributo required indica que el campo es obligatorio -->
                   <!-- El atributo aria-describedby asocia el input con un elemento que proporciona ayuda adicional -->
-
-                  <small id="nombre-help">Mínimo 3 caracteres</small><br>
 
                   <label for="correo">Correo Electrónico(requerido):</label>
                   <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br>
@@ -764,7 +764,7 @@
                   <!-- Se le dice "grupo de checkboxes" y NO ES EXCLUSIVO -->
                   <label><input type="checkbox" name="suscripcion" value="news"> Recibir noticias</label><br>
                   <label><input type="checkbox" name="suscripcion" value="promo"> Recibir promociones</label><br>
-                  <input type="file" name="documento"><br>
+                  <label for="documento">Documento:</label><input type="file" id="documento" name="documento"><br>
 
                   <button id="sendimg" type="submit"><img src="/IMGs/desplegadas/send.ico" alt="icono de enviar">
                     <p>botón img</p>
@@ -799,8 +799,8 @@
               </pre>
             </li>
             <li>
-              <label for="email">Correo:</label>
-              <input placeholder="ejemplo@correo.com" type="email" id="email" name="email">
+              <label for="emaill">Correo:</label>
+              <input placeholder="ejemplo@correo.com" type="email" id="emaill" name="emaill">
             </li>
             <li>
               <b>&lt;button&gt;</b>: acciones dentro del form.
@@ -890,8 +890,8 @@
             <caption>Notas de examen:</caption>
             <thead>
               <tr>
-                <th>Nombre</th>
-                <th>Nota</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Nota</th>
               </tr>
             </thead>
             <tbody>
