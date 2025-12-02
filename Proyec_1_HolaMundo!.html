@@ -1,392 +1,922 @@
 <!DOCTYPE html>
-<!--Esto es un Comentario en HTML.(no se ve en la página)-->
-  <html lang="es">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Hola Mundo!</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="IMGs/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="IMGs/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="IMGs/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="Docs/favicon_io/site.webmanifest">
-    <meta name="description" content="Evalúa mi primer proyecto trabajando con los conceptos basicos para el front end de una pagina.">
-    <meta content="Proyecto Hola Mundo" property="og:title">
-    <meta property="og:type" content="website">
-    <meta content="IMGs/FotoDune.webp" property="og:image">
-    </head>
-    <body>
-      <header>
-        <h1>Bienvenido a mi Proyecto "Hola Mundo!"(h1)</h1>
-      </header>
-        <div class="contenedor">
-          <aside class="sidebar">
-            <nav class="navegacion">
-            <ul class="navegacion">
-              <li><a href="#titulos">Titulos </a></li>
-              <li><a href="#img">Imagen por &lt;img&gt;</a></li>
-              <li><a href="#seccion"> &lt;section &gt;</a></li>
-              <li><a href="#div"> &lt;div &gt;</a></li>
-              <li><a href="#formatel">elementos de formato</a></li>
-              <li><a href="#anclaje">anclas</a></li>
-              <li><a href="#mensaje">Mensaje interactivo y botón</a></li>
-              <li><a href="#embiframe">Embebidos en iframes</a></li>
-              <li><a href="#multimedia">Multimedia</a></li>
-              <li><a href="#targets">Uso de targets</a></li>
-              <li><a href="#article">Ir al artículo</a></li>
-              <li><a href="#semantica">Semantica de HTML</a></li>
-              <li><a href="#ElemPres">Elementos presentacionales</a></li>
-              <li><a href="#EjemplosDelS">Ejemplos del semántico</a></li>
-              <li><a href="#glosario">Glosario de términos</a></li>
-              <li><a href="#quote">Cita con blockquote</a></li>
-              <li><a href="#cite">Citas para obras</a></li>
-              <li><a href="#q">Citas en renglón</a></li>
-              <li><a href="#abbr">Abreviatura y atributo title</a></li>
-              <li><a href="#address">Contacto de una compañía</a></li>
-              <li><a href="#time">elemento time y atributo datetime</a></li>
-              <li><a href="#supsub">Superíndice y subíndice</a></li>
-              <li><a href="#u">Resaltar texto erróneo</a></li>
-              <li><a href="#precode">Usando &lt;pre&gt; y &lt;code&gt; para resaltar texto</a></li>
-              <li><a href="#ruby">Usando &lt;ruby&gt;, &lt;rt&gt; y &lt;rp&gt; para traducir, normalmente tipografía asiática</a></li>
-            </ul>
-            </nav>
-          </aside>
-      <main>
-        <section>
-          <h2 class="subrayado">Estoy aprendiendo lo básico de HTML y CSS</h2>
-          <p>Mi nombre es Matias y este es mi primer proyecto sin guíarme de FreeCodeCamp (en paralelo mientras estudio)</p>
-          <section id="titulos"><h2 class="subrayado">Estos son los 6 tamaños de títulos:</h2>
+
+<html lang="es">
+<!--Este es el lenguaje elegido.-->
+
+<head>
+  <!--Este es el elemento head -->
+  <!-- El elemento <head> contiene metadatos del documento -->
+  <!-- Aquí van: título, enlaces a hojas de estilo, scripts, meta tags -->
+  <!-- Recuerda: nada de lo que está en <head> se muestra directamente en la página -->
+
+  <meta charset="UTF-8">
+  <!-- UTF-8 asegura que se muestren correctamente acentos y caracteres especiales -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- viewport: hace que el sitio sea responsivo en móviles -->
+
+  <title>Proyecto Hola Mundo!</title>
+  <!-- El título aparece en la pestaña del navegador -->
+
+  <link rel="stylesheet" href="CSS/styles.css">
+  <!-- Enlace al archivo de estilos CSS externo -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="IMGs/favicon_io/apple-touch-icon.png">
+  <!-- Icono para dispositivos Apple -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="IMGs/favicon_io/favicon-32x32.png">
+  <!-- Icono para usos varios (generalmente donde se requiere una mejor resolución, como en la barra de tareas de Windows, en un monitor de mayor resolucion, etc.) -->
+
+  <link rel="icon" type="image/png" sizes="16x16" href="IMGs/favicon_io/favicon-16x16.png">
+  <!-- Icono para la pestaña desplegada en la barra de navegación del buscador-->
+
+  <link rel="manifest" href="Docs/favicon_io/site.webmanifest">
+  <!-- Manifesto para aplicaciones web progresivas (PWA) -->
+
+  <meta name="description"
+    content="Evalúa mi primer proyecto trabajando con los conceptos basicos para el front end de una pagina.">
+  <!-- Descripción para motores de búsqueda -->
+
+  <meta property="og:title" content="Proyecto Hola Mundo">
+  <!-- Título para redes sociales -->
+
+  <meta property="og:type" content="website">
+  <!-- Tipo de contenido para Open Graph -->
+
+  <meta property="og:image" content="IMGs/desplegadas/Copilot_20251114_071812.png">
+  <!-- Imagen para compartir en redes sociales -->
+
+</head>
+
+<body>
+  <!-- Este es el cuerpo del documento -->
+  <!-- Aquí va todo el contenido visible de la página -->
+  <!-- Recuerda: todo lo que está en <body> se muestra directamente en la página -->
+  <!-- Usé elementos semánticos para estructurar el contenido -->
+
+  <header>
+    <!-- Encabezado principal -->
+    <!-- Usé un header para el título principal -->
+    <!-- El elemento <header> representa un contenedor para contenido introductorio o un conjunto de enlaces de navegación -->
+    <!-- Sin embargo, los enlaces de navegación están en un elemento <nav> separado dentro de un div -->
+    <!-- Solo debe haber un elemento <header> por documento -->
+
+    <h1>Bienvenido a mi Proyecto "Hola Mundo!"(h1)</h1>
+  </header>
+
+  <div aria-label="Contenedor principal" class="contenedor">
+    <!-- Contenedor principal que incluye barra lateral y contenido principal -->
+    <!-- Los elementos div carecen de significado semántico, por eso usé roles y etiquetas ARIA para mejorar la accesibilidad -->
+    <!-- Se usa <div> para agrupar elementos que no tienen un significado semántico específico, como contenedores o para aplicar estilos -->
+    <!-- El atributo aria-label proporciona una etiqueta accesible para el contenedor -->
+
+    <aside class="sidebar">
+      <!-- El elemento <aside> representa una sección de la página que está relacionada con el contenido principal, pero que puede ser considerada separada o complementaria -->
+      <!-- Usé aside para la barra lateral de navegación, pero este elemento puede ser usado para cualquier contenido que sea tangencialmente relacionado y/o que puede ser entendido por si solo-->
+
+      <nav aria-label="índice de contenidos" class="navegacion">
+        <!-- El elemento <nav> define un conjunto de enlaces de navegación -->
+        <!-- el atributo aria-label proporciona una etiqueta accesible para el conjunto de enlaces -->
+
+        <ul>
+          <!-- Lista no enumerada de enlaces de navegación -->
+
+          <!-- Cada enlace usa un atributo aria-current="location" para indicar que el enlace apunta a la sección actual -->
+          <li><a href="#titulos" aria-current="location">Titulos </a></li>
+          <li><a href="#img" aria-current="location">Imagen por &lt;img&gt;</a></li>
+          <li><a href="#seccion" aria-current="location"> &lt;section &gt;</a></li>
+          <li><a href="#div" aria-current="location"> &lt;div &gt;</a></li>
+          <li><a href="#formatel" aria-current="location">elementos de formato</a></li>
+          <li><a href="#anclaje" aria-current="location">anclas</a></li>
+          <li><a href="#mensaje" aria-current="location">Mensaje interactivo y botón</a></li>
+          <li><a href="#embiframe" aria-current="location">Embebidos en iframes</a></li>
+          <li><a href="#multimedia" aria-current="location">Multimedia</a></li>
+          <li><a href="#targets" aria-current="location">Uso de targets</a></li>
+          <li><a href="#article" aria-current="location">Ir al artículo</a></li>
+          <li><a href="#semantica" aria-current="location">Semantica de HTML</a></li>
+          <li><a href="#ElemPres" aria-current="location">Elementos presentacionales</a></li>
+          <li><a href="#EjemplosDelS" aria-current="location">Ejemplos del semántico</a></li>
+          <li><a href="#glosario" aria-current="location">Glosario de términos</a></li>
+          <li><a href="#quote" aria-current="location">Cita con blockquote</a></li>
+          <li><a href="#cite" aria-current="location">Citas para obras</a></li>
+          <li><a href="#q" aria-current="location">Citas en renglón</a></li>
+          <li><a href="#abbr" aria-current="location">Abreviatura y atributo title</a></li>
+          <li><a href="#address" aria-current="location">Contacto de una compañía</a></li>
+          <li><a href="#time" aria-current="location">elemento time y atributo datetime</a></li>
+          <li><a href="#supsub" aria-current="location">Superíndice y subíndice</a></li>
+          <li><a href="#u" aria-current="location">Resaltar texto erróneo</a></li>
+          <li><a href="#precode" aria-current="location">Usando &lt;pre&gt; y &lt;code&gt; para resaltar texto</a></li>
+          <li><a href="#ruby" aria-current="location">Usando &lt;ruby&gt;, &lt;rt&gt; y &lt;rp&gt; para traducir,
+              normalmente tipografía
+              asiática</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <!-- El elemento <main> representa el contenido principal del cuerpo del documento -->
+      <!-- Solo debe haber un elemento <main> por documento -->
+      <!-- El contenido dentro de <main> debe ser único al documento y no debe repetirse en otras páginas -->
+
+      <section>
+        <!-- El elemento <section> representa una sección genérica del documento -->
+        <!-- en esta sección escribí la introducción -->
+
+        <h2 class="subrayado">Estoy aprendiendo lo básico de HTML y CSS</h2>
+        <!-- Usé un h2 para el subtítulo -->
+        <!-- La clase "subrayado" aplica un estilo CSS para subrayar el texto, lo voy a usar en cada título de sección -->
+        <!-- Usé un h2 porque es el siguiente nivel jerárquico después del h1 del header -->
+
+        <p>Mi nombre es Matias y este es mi primer proyecto sin guíarme de FreeCodeCamp (en paralelo mientras estudio)
+        </p>
+        <!-- Párrafo introductorio -->
+
+      </section>
+
+      <section id="titulos">
+        <!-- Esta sección muestra los diferentes niveles de títulos en HTML -->
+        <!-- El atributo id aquí y en los siguientes elementos section se usa para poder enlazar a esta sección desde la barra lateral (si le doy otro uso a un id lo aclararé) -->
+
+        <h2 class="subrayado">Estos son los 6 tamaños de títulos:</h2>
+        <p>NO se debe usar los elementos de título para estilizar texto, sino para definir la estructura del contenido.
+        </p>
+        <ul>
           <!-- usé una lista desordenada para mostrarlos -->
-          <ul>
-            <li><p class="h1-simulacion">Título nivel 1 (h1)</p></li>
-            <li><h2>Título nivel 2 (h2)</h2></li>
-            <li><h3>Título nivel 3 (h3)</h3></li>
-            <li><h4>Título nivel 4 (h4)</h4></li>
-            <li><h5>Título nivel 5 (h5)</h5></li>
-            <li><h6>Título nivel 6 (h6)</h6></li>
-          </ul>
-          </section>
-        </section>
-        <section>
-          <h2 class="subrayado">Imagen con el elemento &lt;img&gt;</h2>
-          <figure>
-            <img id="img" class="img" src="IMGs/desplegadas/Copilot_20251114_071812.png" alt="Foto de Dune" width="500" height="400">
-            <figcaption>Dune es el padre de la ciencia ficción moderna.(figcaption)</figcaption>
-          </figure>
-        </section>
-        <section id="seccion">
-          <h2 class="subrayado">Este es un título dentro de un elemento sección (section)</h2>
-          <p>Este es un párrafo dentro de un <strong>section</strong>. Es un elemento de semántica importante para la estructura de lo que se <strong>escribe</strong></p>
-        </section>
-        <div id="div">
-          <h2 class="subrayado">Este es un titulo dentro de un elemento div.</h2>
-          <p>Este párrafo se encuentra dentro de un div. Este no tiene función semántica. No ayuda al SEO. Por eso lo estoy usando para desplegar la barra lateral. El </p>
+
+          <li>
+            <p class="h1-simulacion">Título nivel 1 (h1)</p>
+            <!-- Simulación de h1 con clase CSS, ya que solo debe haber un h1 por página -->
+          </li>
+          <li>
+            <h2>Título nivel 2 (h2)</h2>
+          </li>
+          <li>
+            <h3>Título nivel 3 (h3)</h3>
+          </li>
+          <li>
+            <h4>Título nivel 4 (h4)</h4>
+          </li>
+          <li>
+            <h5>Título nivel 5 (h5)</h5>
+          </li>
+          <li>
+            <h6>Título nivel 6 (h6)</h6>
+          </li>
+        </ul>
+      </section>
+
+      <section id="img">
+        <!-- Esta sección muestra una imagen con el elemento img, dentro de un elemento figure y con un pie de imagen gracias al elemento figcaption -->
+
+        <h2 class="subrayado">Imagen con el elemento &lt;img&gt; dentro de un elemento &lt;figure&gt;</h2>
+        <figure>
+          <img class="img" src="IMGs/desplegadas/Copilot_20251114_071812.png" alt="Foto de Dune">
+          <!-- El atributo alt proporciona un texto alternativo para la imagen en caso de que no se muestre -->
+
+          <figcaption>Dune es el padre de la ciencia ficción moderna.(figcaption)</figcaption>
+          <!-- El elemento figcaption proporciona un pie de foto para la imagen -->
+          <!-- Uno o varios elementos img se colocan dentro de un elemento figure si estas tienen valor semántico y requieren contexto o explicación con figcaption  -->
+
+        </figure>
+        <div class="apilar img">
+          <!-- Ejemplo de uso de img fuera de figure -->
+          <!-- Apilar aplica un estilo CSS para separar verticalmente los elementos -->
+          <!-- Img aplica un estilo CSS para limitar el tamaño de la imagen -->
+
+          <p>también puede usarse el elemento img fuera de un elemento figure si no requiere contexto o explicación
+            adicional. Ejemplo:</p>
+          <img src="IMGs/desplegadas/pepsi-logo-png-image-hd.png" alt="Logo de Pepsi">
         </div>
-          <section id="formatel">
-          <h2 class="subrayado">Elementos de formato texto comunes</h2>
-          <p>Este es un parrafo de ejemplo para mostrar <em>énfasis</em> y como usár la <strong>negrita</strong>.</p>
-          <p>Además de <del>texto tachado</del> y <ins>texto subrayado</ins>.</p>
-          <p>Y por último, puedo usar <sub>subíndice</sub> y <sup>superíndice</sup>.</p>
-          </section>
-          <section id="anclaje">
-          <h2 class="subrayado">Enlaces por anclaje</h2>
-          <p>Para enlaces se usa elementos ancla &lt;a&gt; con un atributo href: <a href="https://es.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">Wikipedia HTML</a> y a <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener">FreeCodeCamp</a>.</p>
-          <p>Se usan tambien los atributos target="_blank" y rel="noopener" para controlar comportamiento y seguridad respectivamente.</p>
-          </section>
-        <section class="mensaje">
-          <h2 class="subrayado">Interactividad con JavaScript</h2>
+      </section>
+
+      <section id="seccion">
+        <!-- Esta sección muestra el uso del elemento section -->
+
+        <h2 class="subrayado">Este es un título dentro de un elemento sección (section)</h2>
+        <p>Este es un párrafo dentro de un <strong>section</strong>. Es un elemento de semántica importante para la
+          estructura de lo que se <strong>escribe</strong></p>
+      </section>
+
+      <div id="div">
+        <!-- Esta sección muestra el uso del elemento div -->
+
+        <h2 class="subrayado">Este es un título dentro de un elemento div.</h2>
+        <p>Este párrafo se encuentra dentro de un div. Este no tiene función semántica. No ayuda al SEO. Por eso lo
+          estoy usando para desplegar la barra lateral. El </p>
+      </div>
+
+      <section id="formatel">
+        <!-- Esta sección muestra algunos elementos de formato de texto comunes -->
+        <!-- La función de estos elementos es modificar la apariencia del texto para enfatizar, destacar o indicar cambios, no por razones meramente estilísticas. para eso se usa CSS -->
+
+        <h2 class="subrayado">Elementos de formato texto comunes</h2>
+        <p>Este es un parrafo de ejemplo para mostrar <em>énfasis</em> y como usár la <strong>negrita</strong>.</p>
+        <p>Además de <del>texto tachado</del> y <ins>texto subrayado</ins>.</p>
+        <p>Y por último, puedo usar <sub>subíndice</sub> y <sup>superíndice</sup>.</p>
+      </section>
+
+      <section id="anclaje">
+        <!-- Esta sección muestra el uso de enlaces por anclaje -->
+
+        <h2 class="subrayado">Enlaces por anclaje</h2>
+        <p>Para enlaces se usa elementos ancla &lt;a&gt; con un atributo href:
+          <a href="https://es.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">Wikipedia HTML</a> y a <a
+            href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener">FreeCodeCamp</a>.
+        </p>
+        <!-- Los enlaces abren en una nueva pestaña gracias a target="_blank" -->
+        <!-- El atributo rel "noopener" previene que la página enlazada pueda acceder a la página original a través de la propiedad window.opener, mejorando la seguridad -->
+        <p>Se usan tambien los atributos target="_blank" y rel="noopener" para controlar comportamiento y seguridad
+          respectivamente.</p>
+      </section>
+
+      <section id="mensaje">
+        <!-- Esta sección muestra un mensaje interactivo con JavaScript -->
+
+        <div aria-live="polite">
           <p id="mensaje-texto">Este es el mensaje original.</p>
-          <button onclick="cambiarMensaje()">Haz clic para cambiar el mensaje</button>
-          <script src="JS/main.js"></script>
-          <p>Este botón es desplegado con &lt;button&gt; y usa un evento onclick para llamar a una función JavaScript.</p>
-        </section>
-        <section id="embiframe" class="apilar">
-          <h2 class="subrayado">Contenido embebido con iframe</h2>
-          <p>Con el elemento iframe se puede embeber contenido externo.</p>
-          <iframe src="https://www.youtube.com/embed/9mF6oTRhrqw" width="560" height="315" title="Video de ejemplo" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="300" height="300" title="mapa de ejemplo" style="border:0;" allowfullscreen loading="lazy"></iframe>
-          <iframe src="Docs/programás-con-notepad.txt" width="200" height="200" title="notepad de ejemplo"></iframe>
-        </section>
-        <section id="multimedia" class="apilar">
-          <h2 class="subrayado">Multimedia con &lt;audio&gt; y &lt;video&gt;</h2>
-          <audio src="Audio/monëy-so-big-instrumental_sped-up.mp3" title="Monëy So Big Instrumental" loop controls muted></audio>
-          <video width="300" height="500" aria-label="ChisteDeProgramador" controls muted>
-            <source src="Video/Programar-en-C-VS-en-Python.mp4" type="video/mp4">
-            <track src="Docs/subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
-            Tu navegador no soporta el elemento video.
-          </video>
-        </section>
-        <section id="targets" class="apilar">
-          <h2 class="subrayado">Enlaces con diferentes targets</h2>
-          <p><a href="https://freecodecamp.org" title="sitio oficial de freeCodeCamp" target="_self">Visit freeCodeCamp</a>(con target="_self", opción default)</p>
-          <p><a href="https://freecodecamp.org" title="sitio oficial de freeCodeCamp" target="_blank">Visit freeCodeCamp</a>(con target="_blank")</p>
-          <iframe src="Docs/Ejemplo-parent-top.html" title="html para probar _parent y _top" width="500" height="500"></iframe>
-        </section>
-        <article id="article">
-          <h2 class="subrayado">Elemento article</h2>
-          <p>El elemento &lt;article&gt; representa una composición independiente en un documento, página web, aplicación o sitio, destinada a ser distribuida o reutilizada de forma independiente.</p>
+        </div>
+        <!-- El atributo aria-live="polite" indica a los lectores de pantalla que deben anunciar los cambios en el contenido de manera educada, sin interrumpir al usuario -->
+
+        <button onclick="cambiarMensaje()" aria-controls="mensaje-texto">Haz clic para cambiar el mensaje</button>
+        <!-- El botón tiene un evento onclick que llama a la función cambiarMensaje() definida en el script JavaScript -->
+        <!-- El atributo aria-controls indica que este botón controla el elemento con id "mensaje-texto" -->
+
+        <script src="JS/main.js"></script>
+        <!-- Enlace al archivo JavaScript externo que contiene la función cambiarMensaje() -->
+
+        <p>Este botón es desplegado con &lt;button&gt; y usa un evento onclick para llamar a una función JavaScript.</p>
+      </section>
+
+      <section id="embiframe" class="apilar">
+        <!-- Esta sección muestra contenido embebido con iframe -->
+
+        <h2 class="subrayado">Contenido embebido con iframe</h2>
+        <p>Con el elemento iframe se puede embeber contenido externo.</p>
+        <iframe class="img" src="https://www.youtube.com/embed/9mF6oTRhrqw" title="Video de ejemplo" allowfullscreen
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        <!-- El atributo src especifica la URL del contenido a embeber (es un sitio online y no esta en los archivos locales) -->
+        <!-- El atributo title proporciona un título accesible para el iframe -->
+        <!-- El atributo allowfullscreen permite que el video se vea en pantalla completa -->
+        <!-- El atributo allow especifica qué características están permitidas en el iframe -->
+
+        <iframe class="img" src="https://www.google.com/maps/embed?pb=!1m18..." title="mapa de ejemplo" allowfullscreen
+          loading="lazy"></iframe>
+        <!-- El atributo loading="lazy" indica que el iframe debe cargarse de forma diferida para mejorar el rendimiento -->
+        <!-- El atributo src especifica la URL del contenido a embeber (es un sitio online y no esta en los archivos locales) -->
+
+        <iframe class="img" src="Docs/programás-con-notepad.txt" title="notepad de ejemplo"></iframe>
+        <!-- Ejemplo de embeber un archivo de texto guardado como archivo en la carpeta Docs -->
+
+      </section>
+
+      <section id="multimedia" class="apilar">
+        <!-- Esta sección muestra contenido multimedia con audio y video -->
+
+        <h2 class="subrayado">Multimedia con &lt;audio&gt; y &lt;video&gt;</h2>
+        <audio src="Audio/monëy-so-big-instrumental_sped-up.mp3" title="Monëy So Big Instrumental" loop controls
+          muted></audio>
+        <!-- El atributo loop hace que el audio se repita en bucle, controls muestra los controles de reproducción, muted silencia el audio al inicio -->
+
+        <video class="img" aria-labelledby="video-title" controls muted>
+          <h3 id="video-title" class="sr-only">Chiste de Programador</h3>
+          <source src="Video/Programar-en-C-VS-en-Python.mp4" type="video/mp4">
+          <!-- El elemento source especifica la fuente del video y su tipo MIME (El tipo MIME (Multipurpose Internet Mail Extensions) es una forma estandarizada de indicar el tipo y formato de un archivo o contenido transmitido por Internet.) -->
+
+          <track src="Docs/subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+          <!-- El elemento track proporciona subtítulos para el video -->
+          <!-- El atributo src proporciona la ruta al archivo de subtítulos, que están en formato WebVTT -->
+          <!-- El atributo kind indica el tipo de pista (subtítulos en este caso) -->
+          <!-- El atributo srclang especifica el idioma de los subtítulos -->
+          <!-- El atributo label proporciona una etiqueta legible para los subtítulos -->
+
+          Tu navegador no soporta el elemento video.
+          <!-- Mensaje alternativo para navegadores que no soportan el elemento video -->
+
+        </video>
+      </section>
+
+      <section id="targets" class="apilar">
+        <!-- Esta sección muestra el uso de diferentes targets en enlaces -->
+
+        <h2 class="subrayado">Enlaces con diferentes targets</h2>
+        <p><a href="https://freecodecamp.org" title="sitio oficial de freeCodeCamp" target="_self">Visit
+            freeCodeCamp</a>(con target="_self", opción default)</p>
+        <!-- El atributo target="_self" abre el enlace en la misma pestaña o ventana (comportamiento por defecto) -->
+
+        <p><a href="https://freecodecamp.org" title="sitio oficial de freeCodeCamp" target="_blank">Visit
+            freeCodeCamp</a>(con target="_blank")</p>
+        <!-- El atributo target="_blank" abre el enlace en una nueva pestaña o ventana -->
+
+        <iframe src="Docs/Ejemplo-parent-top.html" title="html para probar _parent y _top" class="img"></iframe>
+        <!-- Ejemplo de iframe para probar los targets _parent y _top -->
+        <!-- El atributo src especifica la URL del contenido a embeber (archivo local en la carpeta Docs) -->
+        <!-- el target _parent dentro del archivo hará que trate de abrirse el link dentro del iframe, mientras que el target _top hará que se abra en la ventana o pestaña principal -->
+
+      </section>
+
+      <article id="article">
+        <!-- Esta sección muestra el uso del elemento article -->
+
+        <h2 class="subrayado">Elemento article</h2>
+        <p>El elemento &lt;article&gt; representa una composición independiente en un documento, página web, aplicación
+          o sitio, destinada a ser distribuida o reutilizada de forma independiente.</p>
+      </article>
+
+      <section id="semantica">
+        <!-- Esta sección introduce las clases de semántica de HTML -->
+
+        <h2 class="subrayado" id="subrayado">A partir de aquí empiezan las clases de semántica de HTML</h2>
+        <h3>Importancia de la semántica</h3>
+
+        <dl class="faq">
+          <!-- Lista de definiciones para preguntas frecuentes -->
+
+          <dt>¿Por qué respetar la semántica?</dt>
+          <dd class="respuesta">Respetar la semántica permite que el contenido tenga un significado claro y consistente,
+            lo que facilita que los
+            lectores de pantalla, buscadores y otros sistemas comprendan mejor la información.</dd>
+          <!-- dt define el término o pregunta, dd define la descripción o respuesta -->
+          <!-- La clase "faq" aplica un estilo CSS específico para listas de preguntas frecuentes -->
+
+          <dt>¿Por qué es importante tener una buena jerarquía estructural?</dt>
+          <dd class="respuesta">Una jerarquía bien definida asegura que el documento esté organizado lógicamente,
+            ayudando a los usuarios a
+            navegar con facilidad.</dd>
+
+          <dt>¿Cuál es la diferencia entre HTML presentacional y semántico?</dt>
+          <dd class="respuesta">HTML presentacional se enfoca en cómo se ve el contenido, mientras que HTML semántico
+            utiliza etiquetas que
+            describen el significado del contenido.</dd>
+        </dl>
+      </section>
+
+      <section>
+        <!-- Esta sección muestra el uso del elemento nav en la barra lateral izquierda -->
+
+        <h2 class="subrayado">Elemento de la sección de navegación &lt;nav&gt;</h2>
+        <p>Mi sección de navegación esta representada en la barra lateral izquierda.</p>
+      </section>
+
+      <section id="ElemPres">
+        <!-- Esta sección explica los elementos presentacionales obsoletos -->
+
+        <h2 class="subrayado">Elementos presentacionales</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Elemento</th>
+              <th>Descripción</th>
+              <th>Uso original</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;b&gt;</td>
+              <td>Texto en negrita</td>
+              <td>Resaltar visualmente, sin semántica</td>
+            </tr>
+            <tr>
+              <td>&lt;i&gt;</td>
+              <td>Texto en cursiva</td>
+              <td>Indicar estilo distinto (ej. extranjerismos)</td>
+            </tr>
+            <tr>
+              <td>&lt;u&gt;</td>
+              <td>Texto subrayado</td>
+              <td>Subrayar contenido, sin semántica</td>
+            </tr>
+            <tr>
+              <td>&lt;s&gt;</td>
+              <td>Texto tachado</td>
+              <td>Mostrar texto obsoleto o irrelevante</td>
+            </tr>
+            <tr>
+              <td>&lt;big&gt;</td>
+              <td>Texto más grande</td>
+              <td>Aumentar tamaño de fuente</td>
+            </tr>
+            <tr>
+              <td>&lt;small&gt;</td>
+              <td>Texto más pequeño</td>
+              <td>Reducir tamaño de fuente</td>
+            </tr>
+            <tr>
+              <td>&lt;font&gt;</td>
+              <td>Definir tipografía, color y tamaño</td>
+              <td>Controlar estilo del texto (obsoleto en HTML5)</td>
+            </tr>
+            <tr>
+              <td>&lt;center&gt;</td>
+              <td>Centrar contenido</td>
+              <td>Alinear texto o elementos al centro</td>
+            </tr>
+            <tr>
+              <td>&lt;strike&gt;</td>
+              <td>Texto tachado (obsoleto, reemplazado por &lt;s&gt;)</td>
+              <td>Mostrar texto eliminado visualmente</td>
+            </tr>
+            <tr>
+              <td>&lt;tt&gt;</td>
+              <td>Texto monoespaciado (teletipo)</td>
+              <td>Simular estilo de máquina de escribir</td>
+            </tr>
+            <tr>
+              <td>&lt;blink&gt;</td>
+              <td>Texto parpadeante (obsoleto)</td>
+              <td>Efecto visual llamativo</td>
+            </tr>
+            <tr>
+              <td>&lt;marquee&gt;</td>
+              <td>Texto desplazándose (obsoleto)</td>
+              <td>Animación de texto en movimiento</td>
+            </tr>
+          </tbody>
+        </table>
+        <p id="entrecuadro">Los elementos presentacionales han quedado obsoletos con el uso de CSS para el estilo
+          visual. Sin embargo algunos aún tienen una pequeña utilidad semántica, al permitir indicar matices o
+          intenciones específicas.</p>
+        <!-- El párrafo entrecuadro aplica un estilo CSS para destacar el texto  entre las tablas -->
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Elemento</th>
+              <th>Peso semántico</th>
+              <th>Utilidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="Resaltar">
+              <!-- La clase Resaltar aplica un estilo CSS para destacar la fila en la tabla -->
+
+              <td>&lt;b&gt;</td>
+              <td>Bajo / nulo</td>
+              <td>Solo pone texto en negrita. haciendolo resaltar para leerlo, más <strong>no indica
+                  importancia</strong> (para eso está &lt;strong&gt;).</td>
+            </tr>
+            <tr class="Resaltar">
+              <td>&lt;i&gt;</td>
+              <td>Bajo / nulo</td>
+              <td>Solo cursiva. Puede indicar un tono distinto, extranjerismos, términos técnicos, pensamientos internos
+                o nombres científicos. <strong>No indica énfasis</strong> (para eso está &lt;em&gt;).</td>
+            </tr>
+            <tr>
+              <td>&lt;u&gt;</td>
+              <td>Nulo</td>
+              <td>Subraya texto, sin significado semántico.</td>
+            </tr>
+            <tr class="Resaltar">
+              <td>&lt;s&gt;</td>
+              <td>Bajo</td>
+              <td>Indica texto obsoleto o irrelevante,<strong> pero sin metadatos.</strong> Menor que &lt;del&gt;.</td>
+            </tr>
+            <tr>
+              <td>&lt;big&gt;</td>
+              <td>Nulo</td>
+              <td>Solo aumenta el tamaño de fuente.</td>
+            </tr>
+            <tr id="Resaltar">
+              <td>&lt;small&gt;</td>
+              <td>Bajo</td>
+              <td>Reduce tamaño de fuente. En HTML5 se le da un matiz semántico leve (nota secundaria).</td>
+            </tr>
+            <tr>
+              <td>&lt;font&gt;</td>
+              <td>Nulo</td>
+              <td>Controlaba tipografía, color y tamaño. Obsoleto en HTML5.</td>
+            </tr>
+            <tr>
+              <td>&lt;center&gt;</td>
+              <td>Nulo</td>
+              <td>Solo alineaba contenido al centro. Obsoleto.</td>
+            </tr>
+            <tr>
+              <td>&lt;strike&gt;</td>
+              <td>Nulo</td>
+              <td>Tachado visual, reemplazado por &lt;s&gt;.</td>
+            </tr>
+            <tr>
+              <td>&lt;tt&gt;</td>
+              <td>Nulo</td>
+              <td>Texto monoespaciado, simulaba estilo de máquina de escribir. Obsoleto.</td>
+            </tr>
+            <tr>
+              <td>&lt;blink&gt;</td>
+              <td>Nulo</td>
+              <td>Texto parpadeante, nunca estándar.</td>
+            </tr>
+            <tr>
+              <td>&lt;marquee&gt;</td>
+              <td>Nulo</td>
+              <td>Texto en movimiento, no estándar.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="EjemplosDelS">
+        <!-- Esta sección muestra ejemplos del uso de los elementos <del> y <s> -->
+
+        <h2 class="subrayado">Ejemplo con &lt;del&gt; (texto eliminado en edición)</h2>
+        <p class="ejemplo-s-del">La reunión será <del cite="https://example.com/reunion-info"
+            datetime="2025-11-17T10:00:00Z">mañana a las 10</del> a las 11.</p>
+        <p>Con registro de cambio gracias al mayor valor semántico de &lt;del&gt;.</p>
+        <h2 class="subrayado">Ejemplo con &lt;s&gt; (texto irrelevante)</h2>
+        <p class="ejemplo-s-del">
+          Precio original: <s>$100</s>
+        </p>
+        <p>Precio actual: $80</p>
+        <p>Sin necesidad de registrar un cambio, menor valor semántico de &lt;s&gt;.</p>
+      </section>
+
+      <section id="glosario">
+        <!-- Esta sección contiene un glosario de términos usando el elemento <dt> -->
+
+        <h2 class="subrayado">Glosario de términos usando &lt;dt&gt;</h2>
+        <dl class="interlineado">
+          <dt>HTML</dt>
+          <dd>HyperText Markup Language. Lenguaje de marcado para estructurar el contenido de la web.</dd>
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheets. Hojas de estilo en cascada para dar formato y diseño visual.</dd>
+          <dt>Accessibility</dt>
+          <dd>Conjunto de prácticas y técnicas que permiten que las personas con distintas capacidades puedan usar y
+            comprender un sitio web.</dd>
+          <dt>SEO</dt>
+          <dd>Search Engine Optimization. Estrategias para mejorar la visibilidad de un sitio en motores de búsqueda.
+          </dd>
+        </dl>
+      </section>
+
+      <section id="quote">
+        <!-- Esta sección muestra el uso del elemento blockquote para citas largas -->
+
+        <h2 class="subrayado">Cita con &lt;blockquote&gt;</h2>
+        <blockquote cite="https://es.wikiquote.org/wiki/Carlo_Dossi#cite_ref-1"></blockquote>
+        <!-- El elemento blockquote se usa para citas largas -->
+        <!-- El ATRIBUTO cite proporciona la fuente de la cita -->
+
+        <p>"Con el amor no se juega. Hay muchos que empiezan por broma y terminan quemándose"</p>
+        <footer>— Carlo Dossi</footer>
+      </section>
+
+      <section id="cite">
+        <!-- Esta sección muestra el uso del elemento cite para citas bibliográficas -->
+
+        <h2 class="subrayado">Usando &lt;cite&gt;</h2>
+        <p>Ejemplo de cita bibliográfica en renglón(se usa para títulos de obras):</p>
+        <p>-Quincy Larson, <cite>How to learn to Code and Get a Developer Job [Full Book].</cite></p>
+        <!-- El ELEMENTO cite se usa para títulos de obras como libros, películas, artículos, etc. -->
+
+      </section>
+
+      <section id="q">
+        <!-- Esta sección muestra el uso del elemento q para citas en el renglón -->
+
+        <h2 class="subrayado">Usando &lt;q&gt; para citas en el renglón</h2>
+        <p>Se usa para citas <strong>cortas</strong></p>
+        <p>As Quincy Larson said,<q cite="https://www.freecodecamp.org/news/learn-to-code-book/">Momentum is
+            everything.</q></p>
+        <!-- El elemento q se usa para citas cortas dentro de un párrafo -->
+
+      </section>
+
+      <section id="abbr">
+        <!-- Esta sección muestra el uso del elemento abbr para abreviaturas -->
+
+        <h2 class="subrayado">Usando &lt;abbr&gt; para abreviaturas</h2>
+        <p><abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.</p>
+        <!-- El elemento abbr se usa para abreviaturas -->
+
+      </section>
+
+      <section id="address">
+        <!-- Esta sección muestra el uso del elemento address para información de contacto -->
+
+        <h2 class="subrayado">Elemento &lt;address&gt; para información de contacto</h2>
+        <h2>Company Name</h2>
+        <address>
+          <!-- El elemento address se usa para información de contacto -->
+
+          <p>1234 Elm Street<br>Springfield, IL 62701<br>United States</p>
+          <!-- Usé etiquetas br para saltos de línea dentro del párrafo -->
+
+          <p>Phone: <a href="tel:+15555555555">+1 (555) 555-5555</a></p>
+          <!-- El atributo href="tel:" en el enlace permite hacer clic para llamar -->
+
+          <p>Email: <a href="mailto:contact@company.com">contact@company.com</a></p>
+          <!-- El atributo href="mailto:" en el enlace permite hacer clic para enviar un correo -->
+
+        </address>
+      </section>
+
+      <section id="time">
+        <!-- Esta sección muestra el uso del elemento time y el atributo datetime para fechas y horas -->
+
+        <h2 class="subrayado">Elemento &lt;time&gt; y el atributo datetime para fechas y horas</h2>
+        <p>The event is scheduled for <time datetime="2024-12-25T18:00">December 25, 2024 at 6:00 PM</time>.</p>
+        <!-- El elemento time se usa para representar fechas y horas -->
+        <!-- El atributo datetime proporciona una representación legible por máquina de la fecha y hora -->
+
+        <p>El formato a usar dentro del atrivuto datetime es YYYY-MM-DDThh:mm:ss para que la informacion sea legible
+          para la computadora.</p>
+      </section>
+
+      <section id="supsub">
+        <!-- Esta sección muestra el uso de los elementos sup y sub para superíndices y subíndices -->
+        <!-- El elemento sup se usa comunmente para exponentes, letras superiores y números ordinales -->
+        <!-- El elemento sub se usa comunmente para fórmulas químicas, notas al pie y variables con índices -->
+
+        <h2 class="subrayado">Usando &lt;sup&gt; y &lt;sub&gt;</h2>
+        <p class="ejemplo-s-del">2<sup>2</sup> (2 al cuadrado) is 4.</p>
+        <p>Superíndice, Uso común: exponentes matemáticos, letras superiores en tipografía, números ordinales.</p>
+        <p class="ejemplo-s-del">CO<sub>2</sub></p>
+        <p>Subíndice, Uso común: fórmulas químicas, notas al pie, variables con índices.</p>
+      </section>
+
+      <section id="u">
+        <!-- Esta sección muestra el uso del elemento u para resaltar texto -->
+        <!-- El elemento u se usa para resaltar texto, normalmente por algún error a visualizar -->
+
+        <h2 class="subrayado">Usando &lt;u&gt; para resaltar texto, normalmente por algún error a visualizar</h2>
+        <p>Puedes usar la anotación desarticulada (&lt;u&gt;) para remarcar palabras <br>
+          <u>incortectos</u> <u>pronusiacion</u> <u>herrores</u>.
+        </p>
+      </section>
+
+      <section id="precode">
+        <!-- Esta sección muestra el uso de los elementos pre y code para resaltar texto de código -->
+
+        <h2 class="subrayado">Usando &lt;pre&gt; y &lt;code&gt; para resaltar texto</h2>
+        <pre>
+            <code>body { color: red; }</code>
+        </pre>
+      </section>
+
+      <section id="ruby">
+        <!-- Esta sección muestra el uso de los elementos ruby, rt y rp para anotaciones de pronunciación -->
+
+        <h2 class="subrayado">Usando &lt;ruby&gt;, &lt;rt&gt; y &lt;rp&gt; para traducir, normalmente tipografía
+          asiática</h2>
+        <ruby>明日 <rp>(</rp>
+          <rt>Ashita</rt>
+          <rp>)</rp>
+        </ruby>
+        <!-- El elemento ruby se usa para anotaciones de pronunciación -->
+        <!-- El elemento rt proporciona la anotación de pronunciación -->
+        <!-- El elemento rp proporciona paréntesis alrededor de la pronunciación en caso de que el navegador no soporte ruby -->
+
+        <p>Se usa rp para proporcionar paréntesis alrededor de la pronunciación en caso de que el navegador no soporte
+          ruby.</p>
+      </section>
+
+      <section id="formulario">
+        <!-- Esta sección muestra un formulario de contacto básico -->
+
+        <h2 class="subrayado">Formulario de contacto básico</h2>
+        <p>Se usa &lt;form&gt; para crear formularios y agrupar los inputs relacionados, dandoles un tipo
+          (type="text/email/submit") y se asocia con etiquetas &lt;label&gt;.</p>
+        <form method="value-goes-here" action="url-goes-here">
+          <!-- El atributo method especifica el método HTTP para enviar los datos (GET o POST) -->
+          <!-- El atributo action especifica la URL donde se enviarán los datos del formulario -->
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br>
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
+          <label for="mensaj">Mensaje:</label><br>
+          <textarea id="mensaj" class="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí"
+            required></textarea><br>
+          <input type="submit" value="Enviar">
+          <!-- Siempre se usa un label para asociar texto descriptivo a cada input -->
+          <!-- El atributo for en label debe coincidir con el id del input asociado -->
+          <!-- El atributo type en input define el tipo de campo (text, email, submit, etc.) -->
+
+        </form>
+        <p>Para el recuadro más grande se usa &lt;textarea&gt; que permite ingresar texto multilínea. Con placeholder se
+          puede mostrar un texto guía dentro del recuadro.</p>
+      </section>
+
+      <section id="formtab">
+        <!-- Esta sección resume los elementos clave de formularios y tablas -->
+
+        <h2 class="subrayado">📑 Formularios y Tablas en HTML</h2>
+        <p>
+          Esta sección resume los elementos clave de formularios y tablas, explicando
+          cada atributo y mostrando ejemplos prácticos para referencia rápida.
+        </p>
+        <article aria-labelledby="forms">
+          <h3 id="forms">📝 Formularios</h3>
+          <ul>
+            <!-- Acá muestro como quedaría el código para un formulario básico y luego doy el ejemplo literal como codigo en mi html -->
+
+            <li>
+              <b>&lt;form&gt;</b>: contenedor de inputs.
+              <em>Ejemplo:</em>
+              <pre>
+                <code>
+                  &lt;form method="POST" action="/enviar"&gt;
+                  &lt;!-- inputs con sus respectivos labels van aquí --&gt;
+                  &lt;/form&gt;
+                </code>
+              </pre>
+            </li>
+            <li>
+              <form action="/enviar" method="POST">
+                <!-- Ejemplo completo de formulario con distintos tipos de inputs -->
+                <!-- El atributo action especifica la URL donde se enviarán los datos del formulario -->
+                <!-- El atributo method especifica el método HTTP para enviar los datos (GET o POST) -->
+
+                <fieldset>
+                  <!-- El elemento fieldset agrupa inputs relacionados -->
+
+                  <legend>Distintos tipos de botones:</legend>
+                  <!-- El elemento legend proporciona un título para el grupo de inputs -->
+
+                  <label for="nombre">Nombre(requerido):</label>
+                  <!-- El atributo for en label debe coincidir con el id del input asociado -->
+
+                  <input placeholder="Nombre de usuario" type="text" id="nombre" name="nombre" aria-required="true"
+                    required aria-describedby="nombre-help">
+                  <!-- El atributo placeholder muestra un texto guía dentro del campo -->
+                  <!-- El atributo type define el tipo de campo (text, email, password, date, radio, checkbox, file) -->
+                  <!-- El atributo id sirve para hacer que el label se asocie correctamente con el input -->
+                  <!-- El atributo name define el nombre del campo para enviar los datos (si varios elementos tienen el mismo name, se agrupan) -->
+                  <!-- El atributo aria-required indica a los lectores de pantalla que el campo es obligatorio, pero no se usa ambos atributos (aria-required y required) porque es redundante (required ya le indica por si solo al lector de pantalla)-->
+                  <!-- El atributo required indica que el campo es obligatorio -->
+                  <!-- El atributo aria-describedby asocia el input con un elemento que proporciona ayuda adicional -->
+
+                  <small id="nombre-help">Mínimo 3 caracteres</small><br>
+
+                  <label for="correo">Correo Electrónico(requerido):</label>
+                  <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br>
+                  <label for="clave">Contraseña(requerido):</label>
+                  <input type="password" id="clave" name="clave" placeholder="Contraseña" required><br>
+                  <label for="nacimiento">Fecha de Nacimiento(requerido):</label><input type="date" id="nacimiento"
+                    name="nacimiento" aria-required="true"><br>
+
+                  <!-- En los siguientes inputs radiales se comparte el mismo name, es decir, estan agrupados, esto logra que solo se pueda elegir una opción, esto sucede con los inputs de tipo radio -->
+                  <!-- Se le dice "grupo de radio buttons" y ES EXCLUSIVO -->
+                  <label><input type="radio" name="genero" required value="M"> Masculino</label><br>
+                  <label><input type="radio" name="genero" value="F"> Femenino</label><br>
+                  <label><input type="radio" name="genero" value="X"> Otro</label><br>
+
+                  <!-- En los siguientes checkboxes se comparte el mismo name, es decir, estan agrupados, esto logra que se pueda elegir varias opciones a la vez, esto sucede con los inputs de tipo checkbox -->
+                  <!-- Se le dice "grupo de checkboxes" y NO ES EXCLUSIVO -->
+                  <label><input type="checkbox" name="suscripcion" value="news"> Recibir noticias</label><br>
+                  <label><input type="checkbox" name="suscripcion" value="promo"> Recibir promociones</label><br>
+                  <input type="file" name="documento"><br>
+
+                  <button id="sendimg" type="submit"><img src="/IMGs/desplegadas/send.ico" alt="icono de enviar">
+                    <p>botón img</p>
+                  </button><br>
+                  <button type="reset">Reiniciar</button><br>
+
+                  <input type="submit" value="Enviar formulario">
+                </fieldset>
+              </form>
+            </li>
+            <li>
+              <b>&lt;input&gt;</b>: campo de entrada.
+              <em>Tipos comunes:</em> text, email, number, radio, checkbox.
+              <em>Ejemplo:</em>
+              <pre>
+                <code>
+                  &lt;input type="text" name="nombre" placeholder="Tu nombre" required&gt;
+                </code>
+              </pre>
+            </li>
+            <li>
+              <input type="text" name="nombre" placeholder="Tu nombre" required>
+            </li>
+            <li>
+              <b>&lt;label&gt;</b>: asocia texto con un input.
+              <em>Ejemplo explícito:</em>
+              <pre>
+                <code>
+                  &lt;label for="email"&gt;Correo:&lt;/label&gt;
+                  &lt;input type="email" id="email" name="email"&gt;
+                </code>
+              </pre>
+            </li>
+            <li>
+              <label for="email">Correo:</label>
+              <input placeholder="ejemplo@correo.com" type="email" id="email" name="email">
+            </li>
+            <li>
+              <b>&lt;button&gt;</b>: acciones dentro del form.
+              <em>Tipos:</em> submit, reset, button.
+              <em>Ejemplo:</em>
+              <pre>
+                <code>
+                  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+                </code>
+              </pre>
+            </li>
+            <li>
+              <button type="submit">Enviar</button>
+            </li>
+            <li>
+              <b>&lt;fieldset&gt; + &lt;legend&gt;</b>: agrupan inputs relacionados (y se ubica dentro del form).
+              <em>Ejemplo:</em>
+              <pre>
+                <code>
+                  &lt;form&gt;
+                    &lt;fieldset&gt;
+                      &lt;legend&gt;Preferencias&lt;/legend&gt;
+                      &lt;input type="checkbox" id="news" name="news"&gt;
+                      &lt;label for="news"&gt;Recibir noticias&lt;/label&gt;
+                    &lt;/fieldset&gt;
+                  &lt;/form&gt;
+                </code>
+              </pre>
+            </li>
+            <li>
+              <form>
+                <fieldset>
+                  <legend>Preferencias</legend>
+                  <input type="checkbox" id="news" name="news">
+                  <label for="news">Recibir noticias</label>
+                </fieldset>
+              </form>
+            </li>
+          </ul>
         </article>
-        <section id="semantica">
-          <h2 class="subrayado" id="subrayado">A partir de aquí empiezan las clases de semántica de HTML</h2>
-          <h3>Importancia de la semántica</h3>
-          <p><span class="pregunta">¿Por qué respetar la semántica?:</span></p>
-          <p class="respuesta">Respetar la semántica permite que el contenido tenga un significado claro y consistente, lo que facilita que los lectores de pantalla, buscadores y otros sistemas comprendan mejor la información. En otras palabras, no es solo cómo se ve, sino qué representa.</p>
-          <p><span class="pregunta">¿Por qué es importante tener una buena jerarquía estructural?:</span></p>
-          <p class="respuesta">Una jerarquía bien definida asegura que el documento esté organizado lógicamente, ayudando a los usuarios a navegar con facilidad y a los motores de búsqueda a interpretar la relevancia de cada sección. Es como darle un mapa claro al navegador y al lector sobre qué es principal y qué es secundario.</p>
-          <p><span class="pregunta">¿Cuál es la diferencia entre HTML presentacional y semántico?</span></p>
-          <p class="respuesta">HTML presentacional se enfoca en cómo se ve el contenido, usando clases y CSS o JavaScript, mientras que HTML semántico utiliza etiquetas que describen el significado del contenido, mejorando la accesibilidad y la estructura del documento.</p>
-        </section>
-        <section>
-          <h2 class="subrayado">Elemento de la sección de navegación &lt;nav&gt;</h2>
-          <p>Mi sección de navegación esta representada en la barra lateral izquierda.</p>
-        </section>
-        <section id="ElemPres">
-          <h2 class="subrayado">Elementos presentacionales</h2>
+        <article aria-labelledby="tables">
+          <h3 id="tables">📊 Tablas</h3>
+          <ul>
+            <li>
+              <b>&lt;table&gt;</b>: estructura principal.
+              <em>Ejemplo básico:</em>
+              <pre>
+                <code>
+                  &lt;table&gt;
+                    &lt;caption&gt;Notas de examen&lt;/caption&gt;
+                    &lt;thead&gt;
+                      &lt;tr&gt;&lt;th&gt;Nombre&lt;/th&gt;&lt;th&gt;Nota&lt;/th&gt;&lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;Ana&lt;/td&gt;
+                        &lt;td&gt;95&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;Luis&lt;/td&gt;
+                        &lt;td&gt;88&lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                    &lt;tfoot&gt;
+                      &lt;tr&gt;
+                        &lt;td colspan="2"&gt;Promedio: 91.5&lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/tfoot&gt;
+                  &lt;/table&gt;
+                </code>
+              </pre>
+            </li>
+            <li>
+              <b>&lt;caption&gt;</b>: título descriptivo de la tabla.
+            </li>
+            <li>
+              <b>&lt;thead&gt; / &lt;tbody&gt; / &lt;tfoot&gt;</b>: separan cabecera, cuerpo y pie.
+            </li>
+            <li>
+              <b>&lt;th&gt; / &lt;td&gt;</b>: celdas de encabezado y datos.
+            </li>
+            <li>
+              <b>colspan</b>: permite que una celda abarque varias columnas.
+            </li>
+          </ul>
           <table class="table">
+            <caption>Notas de examen:</caption>
             <thead>
               <tr>
-                <th>Elemento</th>
-                <th>Descripción</th>
-                <th>Uso original</th>
+                <th>Nombre</th>
+                <th>Nota</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>&lt;b&gt;</td>
-                <td>Texto en negrita</td>
-                <td>Resaltar visualmente, sin semántica</td>
+                <td>Ana</td>
+                <td>95</td>
               </tr>
               <tr>
-                <td>&lt;i&gt;</td>
-                <td>Texto en cursiva</td>
-                <td>Indicar estilo distinto (ej. extranjerismos)</td>
-              </tr>
-              <tr>
-                <td>&lt;u&gt;</td>
-                <td>Texto subrayado</td>
-                <td>Subrayar contenido, sin semántica</td>
-              </tr>
-              <tr>
-                <td>&lt;s&gt;</td>
-                <td>Texto tachado</td>
-                <td>Mostrar texto obsoleto o irrelevante</td>
-              </tr>
-              <tr>
-                <td>&lt;big&gt;</td>
-                <td>Texto más grande</td>
-                <td>Aumentar tamaño de fuente</td>
-              </tr>
-              <tr>
-                <td>&lt;small&gt;</td>
-                <td>Texto más pequeño</td>
-                <td>Reducir tamaño de fuente</td>
-              </tr>
-              <tr>
-                <td>&lt;font&gt;</td>
-                <td>Definir tipografía, color y tamaño</td>
-                <td>Controlar estilo del texto (obsoleto en HTML5)</td>
-              </tr>
-              <tr>
-                <td>&lt;center&gt;</td>
-                <td>Centrar contenido</td>
-                <td>Alinear texto o elementos al centro</td>
-              </tr>
-              <tr>
-                <td>&lt;strike&gt;</td>
-                <td>Texto tachado (obsoleto, reemplazado por &lt;s&gt;)</td>
-                <td>Mostrar texto eliminado visualmente</td>
-              </tr>
-              <tr>
-                <td>&lt;tt&gt;</td>
-                <td>Texto monoespaciado (teletipo)</td>
-                <td>Simular estilo de máquina de escribir</td>
-              </tr>
-              <tr>
-                <td>&lt;blink&gt;</td>
-                <td>Texto parpadeante (obsoleto)</td>
-                <td>Efecto visual llamativo</td>
-              </tr>
-              <tr>
-                <td>&lt;marquee&gt;</td>
-                <td>Texto desplazándose (obsoleto)</td>
-                <td>Animación de texto en movimiento</td>
+                <td>Luis</td>
+                <td>88</td>
               </tr>
             </tbody>
-        </table>
-        <p id="entrecuadro">Los elementos presentacionales han quedado obsoletos con el uso de CSS para el estilo visual. Sin embargo algunos aún tienen una pequeña utilidad semántica, al permitir indicar matices o intenciones específicas.</p>
-        <table class="table">
-        <thead>
-        <tr>
-          <th>Elemento</th>
-          <th>Peso semántico</th>
-          <th>Utilidad</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="Resaltar">
-          <td>&lt;b&gt;</td>
-          <td>Bajo / nulo</td>
-          <td>Solo pone texto en negrita. haciendolo resaltar para leerlo, más <strong>no indica importancia</strong> (para eso está &lt;strong&gt;).</td>
-        </tr>
-        <tr class="Resaltar">
-          <td>&lt;i&gt;</td>
-          <td>Bajo / nulo</td>
-          <td>Solo cursiva. Puede indicar un tono distinto, extranjerismos, términos técnicos, pensamientos internos o nombres científicos. <strong>No indica énfasis</strong> (para eso está &lt;em&gt;).</td>
-        </tr>
-        <tr>
-          <td>&lt;u&gt;</td>
-          <td>Nulo</td>
-          <td>Subraya texto, sin significado semántico.</td>
-        </tr>
-        <tr class="Resaltar">
-          <td>&lt;s&gt;</td>
-          <td>Bajo</td>
-          <td>Indica texto obsoleto o irrelevante,<strong> pero sin metadatos.</strong> Menor que &lt;del&gt;.</td>
-        </tr>
-        <tr>
-          <td>&lt;big&gt;</td>
-          <td>Nulo</td>
-          <td>Solo aumenta el tamaño de fuente.</td>
-        </tr>
-        <tr id="Resaltar">
-          <td>&lt;small&gt;</td>
-          <td>Bajo</td>
-          <td>Reduce tamaño de fuente. En HTML5 se le da un matiz semántico leve (nota secundaria).</td>
-        </tr>
-        <tr>
-          <td>&lt;font&gt;</td>
-          <td>Nulo</td>
-          <td>Controlaba tipografía, color y tamaño. Obsoleto en HTML5.</td>
-        </tr>
-        <tr>
-          <td>&lt;center&gt;</td>
-          <td>Nulo</td>
-          <td>Solo alineaba contenido al centro. Obsoleto.</td>
-        </tr>
-        <tr>
-          <td>&lt;strike&gt;</td>
-          <td>Nulo</td>
-          <td>Tachado visual, reemplazado por &lt;s&gt;.</td>
-        </tr>
-        <tr>
-          <td>&lt;tt&gt;</td>
-          <td>Nulo</td>
-          <td>Texto monoespaciado, simulaba estilo de máquina de escribir. Obsoleto.</td>
-        </tr>
-        <tr>
-          <td>&lt;blink&gt;</td>
-          <td>Nulo</td>
-          <td>Texto parpadeante, nunca estándar.</td>
-        </tr>
-        <tr>
-          <td>&lt;marquee&gt;</td>
-          <td>Nulo</td>
-          <td>Texto en movimiento, no estándar.</td>
-        </tr>
-        </tbody>
-        </table>
-        </section>
-        <section id="EjemplosDelS">
-          <h2 class="subrayado">Ejemplo con &lt;del&gt; (texto eliminado en edición)</h2>
-            <p class="ejemplo-s-del">La reunión será <del cite="https://example.com/reunion-info" datetime="2025-11-17T10:00:00Z">mañana a las 10</del> a las 11.</p>
-            <p>Con registro de cambio gracias al mayor valor semántico de &lt;del&gt;.</p>
-            <h2 class="subrayado">Ejemplo con &lt;s&gt; (texto irrelevante)</h2>
-            <p class="ejemplo-s-del">
-              Precio original: <s>$100</s>
-            </p>
-            <p>Precio actual: $80</p>
-            <p>Sin necesidad de registrar un cambio, menor valor semántico de &lt;s&gt;.</p>
-        </section>
-        <section id="glosario">
-          <h2 class="subrayado">Glosario de términos usando &lt;dt&gt;</h2>
-          <dl class="interlineado">
-            <dt>HTML</dt>
-            <dd>HyperText Markup Language. Lenguaje de marcado para estructurar el contenido de la web.</dd>
-            <dt>CSS</dt>
-            <dd>Cascading Style Sheets. Hojas de estilo en cascada para dar formato y diseño visual.</dd>
-            <dt>Accessibility</dt>
-            <dd>Conjunto de prácticas y técnicas que permiten que las personas con distintas capacidades puedan usar y comprender un sitio web.</dd>
-            <dt>SEO</dt>
-            <dd>Search Engine Optimization. Estrategias para mejorar la visibilidad de un sitio en motores de búsqueda.</dd>
-          </dl>
-        </section>
-        <section id="quote">
-            <h2 class="subrayado">Cita con &lt;blockquote&gt;</h2>
-            <blockquote cite="https://es.wikiquote.org/wiki/Carlo_Dossi#cite_ref-1"></blockquote>
-              <p>"Con el amor no se juega. Hay muchos que empiezan por broma y terminan quemándose"</p>
-              <footer>— Carlo Dossi</footer>
-        </section>
-        <section id="cite">
-          <h2 class="subrayado">Usando &lt;cite&gt;</h2>
-          <p>Ejemplo de cita bibliográfica en renglón(se usa para títulos de obras):</p>
-          <p>-Quincy Larson, <cite>How to learn to Code and Get a Developer Job [Full Book].</cite></p>
-        </section>
-        <section id="q">
-          <h2 class="subrayado">Usando &lt;q&gt; para citas en el renglón</h2>
-          <p>Se usa para citas <strong>cortas</strong></p>
-          <p>As Quincy Larson said,<q cite="https://www.freecodecamp.org/news/learn-to-code-book/">Momentum is everything.</q>
-          </p>
-        </section>
-        <section id="abbr">
-          <h2 class="subrayado">Usando &lt;abbr&gt; para abreviaturas</h2>
-          <p><abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.</p>
-        </section>
-        <section id="address">
-          <h2 class="subrayado">Elemento &lt;address&gt; para información de contacto</h2>
-          <h2>Company Name</h2>
-          <address>
-          <p>1234 Elm Street<br>Springfield, IL 62701<br>United States</p>
-          <p>Phone: <a href="tel:+15555555555">+1 (555) 555-5555</a></p>
-          <p>Email: <a href="mailto:contact@company.com">contact@company.com</a></p>
-          </address>
-        </section>
-        <section id="time">
-          <h2 class="subrayado">Elemento &lt;time&gt; y el atributo datetime para fechas y horas</h2>
-          <p>The event is scheduled for <time datetime="2024-12-25T18:00">December 25, 2024 at 6:00 PM</time>.</p>
-          <p>El formato a usar dentro del atrivuto datetime es YYYY-MM-DDThh:mm:ss para que la informacion sea legible para la computadora.</p>
-        </section>
-        <section id="supsub">
-          <h2 class="subrayado">Usando &lt;sup&gt; y &lt;sub&gt;</h2>
-          <p class="ejemplo-s-del">2<sup>2</sup> (2 al cuadrado) is 4.</p>
-          <p>Superíndice, Uso común: exponentes matemáticos, letras superiores en tipografía, números ordinales.</p>
-          <p class="ejemplo-s-del">CO<sub>2</sub></p>
-          <p>Subíndice, Uso común: fórmulas químicas, notas al pie, variables con índices.</p>
-        </section>
-        <section id="u">
-          <h2 class="subrayado">Usando &lt;u&gt; para resaltar texto, normalmente por algún error a visualizar</h2>
-          <p>Puedes usar la anotación desarticulada (&lt;u&gt;) para remarcar palabras <br>
-            <u>incortectos</u> <u>pronusiacion</u> <u>herrores</u>.
-          </p>
-        </section>
-        <section id="precode">
-          <h2 class="subrayado">Usando &lt;pre&gt; y &lt;code&gt; para resaltar texto</h2>
-          <pre>
-            <code>body { color: red; }</code>
-          </pre>
-        </section>
-        <section id="ruby">
-          <h2 class="subrayado">Usando &lt;ruby&gt;, &lt;rt&gt; y &lt;rp&gt; para traducir, normalmente tipografía asiática</h2>
-          <ruby>明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp></ruby>
-          <p>Se usa rp para proporcionar paréntesis alrededor de la pronunciación en caso de que el navegador no soporte ruby.</p>
-        </section>
-        <section>
-          <h2 class="subrayado">Formulario de contacto básico</h2>
-          <p>Se usa &lt;form&gt; para crear formularios y agrupar los inputs relacionados, dandoles un tipo (type="text/email/submit") y se asocia con etiquetas &lt;label&gt;.</p>
-          <form method="value-goes-here" action="url-goes-here">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br><br>
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" class="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea><br><br>
-            <input type="submit" value="Enviar">
-          </form>
-          <p>Para el recuadro más grande se usa &lt;textarea&gt; que permite ingresar texto multilínea. Con placeholder se puede mostrar un texto guía dentro del recuadro.</p>
-        </section>
-      </main>
-      </div>
-      <footer>
-        <p>Proyecto de programación HTML y CSS - Matias</p>
-      </footer>
-    </body>
-  </html>
+            <tfoot>
+              <tr>
+                <td colspan="2">Promedio: 91.5</td>
+              </tr>
+            </tfoot>
+          </table>
+        </article>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <p>Proyecto de programación HTML y CSS - Matias</p>
+  </footer>
+</body>
+
+</html>

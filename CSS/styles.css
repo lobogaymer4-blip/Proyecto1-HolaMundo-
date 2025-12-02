@@ -1,99 +1,183 @@
 /* estilos básicos */
 body {
-    font-family: Arial, sans-serif;
-    margin: 16px;
-    background-color: #fff0ad;
+  font-family: Arial, sans-serif;
+  margin: 16px;
+  background-color: #fff0ad;
 }
-#title {
-    color: rgb(255, 0, 0);
-    font-size: 24px;
-}
+
 img {
-    max-width: 40%;
-    height: auto;
-    display: block;
-    margin-right: 16px; }
-.img { 
-    align-items: center;
-    justify-content: center; 
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 10px;}    
-.apilar {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1px; }
-.h1-simulacion { font-size: 2em; font-weight: bold; }
-#article {
-    background-color: rgb(200, 200, 255);
-    padding: 16px;
-    border-radius: 30px;
-    margin-top: 10px;
+  max-width: auto;
+  height: auto;
+  display: block;
+  margin-left: 16px;
 }
+
+figure {
+  margin: 0px;
+  /* Aplica márgenes uniformes */
+  padding: 0;
+  /* Quita padding por defecto */
+}
+
+div.img img {
+  margin: 16px;
+  /* Quita el margen izquierdo extra del img dentro de div */
+  max-width: 10%;
+  height: 10%;
+}
+
+figure img {
+  max-width: 20%;
+  height: 20%;
+  /* Quita el margen izquierdo extra del img dentro de figure */
+}
+
+figcaption {
+  margin-top: 8px;
+  /* Espacio entre imagen y caption */
+  font-style: italic;
+  /* Opcional: estiliza el caption */
+  color: #666;
+  /* Opcional: color gris */
+}
+
+#sendimg {
+  display: inline-flex;
+  /* centrado fácil */
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  /* quita padding del botón */
+  border: none;
+  /* quita borde */
+  background: transparent;
+  /* hace fondo invisible */
+  width: 50px;
+  /* adapta al tamaño de la imagen */
+  height: 50px;
+  cursor: pointer;
+}
+
+#sendimg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* mantiene proporción y centra */
+}
+
+.faq dt {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.img {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.apilar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+}
+
+.h1-simulacion {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#article {
+  background-color: rgb(200, 200, 255);
+  padding: 16px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
 .contenedor {
-  display: flex; /* coloca sidebar y contenido uno al lado del otro */
+  display: flex;
+  /* coloca sidebar y contenido uno al lado del otro */
 }
 
 .sidebar {
-  width: 200px;       /* ancho fijo */
-  background: #f0f0f0; /* color de fondo */
+  width: 200px;
+  /* ancho fijo */
+  background: #f0f0f0;
+  /* color de fondo */
   padding: 10px;
   background-color: rgba(177, 179, 87, 0.767);
   margin-right: 20px;
 }
 
 .contenido {
-  flex: 1;            /* ocupa el resto del espacio */
+  flex: 1;
+  /* ocupa el resto del espacio */
   padding: 20px;
 }
-.respuesta { 
-  text-indent: 20px; 
-  margin-left: 30px; 
+
+.respuesta {
+  text-indent: 20px;
+  margin-left: 30px;
 }
-.pregunta { 
-  font-weight: bold; 
+
+.pregunta {
+  font-weight: bold;
 }
+
 .subrayado {
   text-decoration: underline;
-  color:lch(29.44% 53.61 291.15);
+  color: lch(29.44% 53.61 291.15);
 }
+
 .recuadro {
   background-color: rgba(0, 255, 76, 0.9);
-    color: #000000;                                  
-    padding: 8px 12px;
-    border-radius: 10px;
-    display: block;
-    width: fit-content;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 6px rgba(1, 255, 43, 0.15);
-    transition: transform 0.2s ease;
-    box-shadow: 0 4px 12px rgb(98, 255, 124);
+  color: #000000;
+  padding: 8px 12px;
+  border-radius: 10px;
+  display: block;
+  width: fit-content;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 6px rgba(1, 255, 43, 0.15);
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 12px rgb(98, 255, 124);
 }
+
 .mensaje {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
+
 .ejemplo-s-del {
-    background-color: rgba(255, 0, 0, 0.2);
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    font-style: italic;
-    width: fit-content
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-style: italic;
+  width: fit-content
 }
+
 .table {
-  border-collapse: collapse; /* une los bordes de celdas adyacentes */
+  border-collapse: collapse;
+  /* une los bordes de celdas adyacentes */
   border: 1px solid #000;
   background-color: bisque;
 }
 
-.table td, .table th {
+.table td,
+.table th {
   padding: 8px;
   border: 1px solid #000;
 }
+
 .Resaltar {
   background-color: rgba(156, 219, 255, 0.699);
 }
+
 #entrecuadro {
   background-color: rgba(255, 255, 0, 0.397);
   padding: 10px;
@@ -101,80 +185,162 @@ img {
   margin-bottom: 10px;
   font-style: italic;
 }
+
 section {
-  scroll-margin-top: 50vh; /* deja el elemento 50% de la altura visible arriba */
+  scroll-margin-top: 50vh;
+  /* deja el elemento 50% de la altura visible arriba */
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-h2, h3 {
-  scroll-margin-top: 50vh; /* también para encabezados que sean destinos de anclas */
+h2,
+h3 {
+  scroll-margin-top: 50vh;
+  /* también para encabezados que sean destinos de anclas */
 }
+
 .navegacion {
-  position: sticky; /* hace que la barra lateral sea pegajosa */
+  position: sticky;
+  /* hace que la barra lateral sea pegajosa */
   top: 10px;
   display: block;
 }
 
 .navegacion a {
-  display: block;        /* cada enlace ocupa su propia línea */
-  margin-bottom: 12px;   /* espacio entre enlaces */
-  padding: 8px 0;        /* espacio interno arriba/abajo */
-  text-decoration: none; /* quita el subrayado */
-  color: #333;           /* color del texto */
+  display: block;
+  /* cada enlace ocupa su propia línea */
+  margin-bottom: 12px;
+  /* espacio entre enlaces */
+  padding: 8px 0;
+  /* espacio interno arriba/abajo */
+  text-decoration: none;
+  /* quita el subrayado */
+  color: #333;
+  /* color del texto */
 }
+
 .navegacion a:hover {
-  color: #000;           /* opcional: color al pasar el mouse */
+  color: #000;
+  /* opcional: color al pasar el mouse */
   text-decoration: underline;
 }
-section:target {
+
+section:target,
+div:target {
   background-color: rgba(0, 255, 76, 0.1);
-  border-left: 4px solid rgb(0, 255, 76); /* verde consistente */
+  border-left: 4px solid rgb(0, 255, 76);
+  /* verde consistente */
   padding-left: 16px;
   box-shadow: 0 0 20px rgba(0, 255, 76, 0.3);
   transition: all 0.4s ease;
 }
 
 /* Agrega estas reglas para otros elementos con ID */
-h2:target, h3:target {
+h2:target,
+h3:target {
   background-color: rgba(0, 255, 76, 0.2);
   padding: 12px;
-   border-left: 4px solid rgb(0, 255, 76); /* verde consistente */
+  border-left: 4px solid rgb(0, 255, 76);
+  /* verde consistente */
   padding-left: 16px;
-  box-shadow: 0 0 20px rgba(0, 255, 76, 0.3);
-  transition: all 0.4s ease;
-}
-
-img:target, figure:target, div:target, p:target, input:target {
-  outline: 4px solid rgb(0, 255, 76); /* verde consistente */
   box-shadow: 0 0 20px rgba(0, 255, 76, 0.3);
   transition: all 0.4s ease;
 }
 
 article:target {
   background-color: rgba(0, 255, 76, 0.1);
-  border-left: 4px solid rgb(0, 255, 76); /* verde consistente */
+  border-left: 4px solid rgb(0, 255, 76);
+  /* verde consistente */
   padding-left: 16px;
   box-shadow: 0 0 20px rgba(0, 255, 76, 0.3);
   transition: all 0.4s ease;
 }
+
 .interlineado dt {
-  margin-top: 16px;      /* espacio arriba de cada término */
-  margin-bottom: 8px;    /* espacio debajo del término */
-  font-weight: bold;     /* opcional: hace los términos más visibles */
+  margin-top: 16px;
+  /* espacio arriba de cada término */
+  margin-bottom: 8px;
+  /* espacio debajo del término */
+  font-weight: bold;
+  /* opcional: hace los términos más visibles */
 }
 
 .interlineado dd {
-  margin-left: 24px;     /* sangría para las definiciones */
-  margin-bottom: 16px;   /* espacio entre definiciones */
-  line-height: 1.6;      /* mayor altura de línea para mejor legibilidad */
+  margin-left: 24px;
+  /* sangría para las definiciones */
+  margin-bottom: 16px;
+  /* espacio entre definiciones */
+  line-height: 1.6;
+  /* mayor altura de línea para mejor legibilidad */
 }
 
 .interlineado {
-  margin-top: 20px;      /* espacio arriba de toda la lista */
-  margin-bottom: 20px;   /* espacio debajo de toda la lista */
+  margin-top: 20px;
+  /* espacio arriba de toda la lista */
+  margin-bottom: 20px;
+  /* espacio debajo de toda la lista */
 }
+
 #mensaje {
   width: 100%;
   min-height: 100px;
   max-width: 500px;
-  resize: vertical; /* permite redimensionar solo verticalmente */
+  resize: vertical;
+  /* permite redimensionar solo verticalmente */
+}
+
+pre {
+  background-color: #f4f4f4;
+  border-left: 4px solid rgb(0, 255, 76);
+  padding: 16px;
+  margin: 16px 0;
+  overflow-x: auto;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: #c7254e;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  color: #333;
+}
+
+/* Mejora visual de listas dentro de secciones */
+section ul {
+  margin-left: 24px;
+  padding-left: 16px;
+}
+
+section ul li {
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+/* Sangría para elementos anidados */
+section ul li ul {
+  margin-left: 32px;
+  margin-top: 8px;
+}
+
+/* Estilo para strong dentro de listas */
+section ul li strong {
+  color: rgb(0, 180, 60);
+  font-weight: 600;
+}
+
+/* Mejora visual de em */
+section ul li em {
+  color: #666;
+  font-style: italic;
 }
