@@ -237,7 +237,8 @@ h3 {
 }
 
 section:target,
-div:target {
+div:target,
+table:target {
   background-color: rgba(0, 255, 76, 0.1);
   border-left: 4px solid rgb(0, 255, 76);
   /* verde consistente */
@@ -354,4 +355,29 @@ section ul li strong {
 section ul li em {
   color: #666;
   font-style: italic;
+}
+
+.sangría {
+  margin-left: 30px;
+}
+
+.tokenp {
+  color: #ffff00;
+}
+
+.tokens {
+  color: #569cd6;
+}
+
+.tokenprop {
+  color: #f8c555;
+}
+
+.borde {
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.subrayar {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 0, 0);
 }

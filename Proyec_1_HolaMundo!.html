@@ -1,7 +1,39 @@
 <!DOCTYPE html>
 
+<!-- 📒 Plantilla de notas de diseño y decisiones
+🔹 Contexto del ejercicio/proyecto
+Objetivo: Crear una página web básica usando HTML5 y CSS3 para practicar conceptos fundamentales de desarrollo front-end.
+
+Tecnologías usadas: HTML5, CSS3, JavaScript
+
+Fecha: 6/11/2025
+
+🔹 Decisiones técnicas
+Decisión:
+
+Por qué la tomé:
+
+Alternativas consideradas:
+
+Resultado esperado:
+
+🔹 Cambios posteriores
+Cambio realizado:
+
+Razón del cambio:
+
+Qué aprendí con este ajuste:
+
+🔹 Reflexiones
+Qué funcionó bien:
+
+Qué podría mejorar:
+
+Qué quiero investigar más a fondo: -->
+
 <html lang="es-AR">
 <!--Este es el lenguaje elegido.-->
+/
 
 <head>
   <!--Este es el elemento head -->
@@ -107,9 +139,10 @@
           <li><a href="#supsub" aria-current="location">Superíndice y subíndice</a></li>
           <li><a href="#u" aria-current="location">Resaltar texto erróneo</a></li>
           <li><a href="#precode" aria-current="location">Usando &lt;pre&gt; y &lt;code&gt; para resaltar texto</a></li>
-          <li><a href="#ruby" aria-current="location">Usando &lt;ruby&gt;, &lt;rt&gt; y &lt;rp&gt; para traducir,
-              normalmente tipografía
-              asiática</a></li>
+          <li><a href="#ruby" aria-current="location">Usando &lt;ruby&gt;, &lt;rt&gt; y &lt;rp&gt;</a></li>
+          <li><a href="#formulario" aria-current="location">Formulario </a></li>
+          <li><a href="#tabla" aria-current="location">Tabla</a></li>
+          <li><a href="#css" aria-current="location">CSS</a></li>
         </ul>
       </nav>
     </aside>
@@ -123,7 +156,7 @@
         <!-- El elemento <section> representa una sección genérica del documento -->
         <!-- en esta sección escribí la introducción -->
 
-        <h2 class="subrayado">Estoy aprendiendo lo básico de HTML y CSS</h2>
+        <h2 class="subrayado">Estoy aprendiendo lo básico de HTML</h2>
         <!-- Usé un h2 para el subtítulo -->
         <!-- La clase "subrayado" aplica un estilo CSS para subrayar el texto, lo voy a usar en cada título de sección -->
         <!-- Usé un h2 porque es el siguiente nivel jerárquico después del h1 del header -->
@@ -133,7 +166,7 @@
         <!-- Párrafo introductorio -->
 
       </section>
-
+      <hr>
       <section id="titulos">
         <!-- Esta sección muestra los diferentes niveles de títulos en HTML -->
         <!-- El atributo id aquí y en los siguientes elementos section se usa para poder enlazar a esta sección desde la barra lateral (si le doy otro uso a un id lo aclararé) -->
@@ -165,7 +198,7 @@
           </li>
         </ul>
       </section>
-
+      <hr>
       <section id="img">
         <!-- Esta sección muestra una imagen con el elemento img, dentro de un elemento figure y con un pie de imagen gracias al elemento figcaption -->
 
@@ -189,7 +222,7 @@
           <img src="IMGs/desplegadas/pepsi-logo-png-image-hd.png" alt="Logo de Pepsi">
         </div>
       </section>
-
+      <hr>
       <section id="seccion">
         <!-- Esta sección muestra el uso del elemento section -->
 
@@ -197,7 +230,7 @@
         <p>Este es un párrafo dentro de un <strong>section</strong>. Es un elemento de semántica importante para la
           estructura de lo que se <strong>escribe</strong></p>
       </section>
-
+      <hr>
       <div id="div">
         <!-- Esta sección muestra el uso del elemento div -->
 
@@ -205,7 +238,7 @@
         <p>Este párrafo se encuentra dentro de un div. Este no tiene función semántica. No ayuda al SEO. Por eso lo
           estoy usando para desplegar la barra lateral. El </p>
       </div>
-
+      <hr>
       <section id="formatel">
         <!-- Esta sección muestra algunos elementos de formato de texto comunes -->
         <!-- La función de estos elementos es modificar la apariencia del texto para enfatizar, destacar o indicar cambios, no por razones meramente estilísticas. para eso se usa CSS -->
@@ -215,7 +248,7 @@
         <p>Además de <del>texto tachado</del> y <ins>texto subrayado</ins>.</p>
         <p>Y por último, puedo usar <sub>subíndice</sub> y <sup>superíndice</sup>.</p>
       </section>
-
+      <hr>
       <section id="anclaje">
         <!-- Esta sección muestra el uso de enlaces por anclaje -->
 
@@ -229,10 +262,11 @@
         <p>Se usan tambien los atributos target="_blank" y rel="noopener" para controlar comportamiento y seguridad
           respectivamente.</p>
       </section>
-
+      <hr>
       <section id="mensaje">
         <!-- Esta sección muestra un mensaje interactivo con JavaScript -->
 
+        <h2 class="subrayado">Mensaje interactivo con JavaScript</h2>
         <div aria-live="polite">
           <p id="mensaje-texto">Este es el mensaje original.</p>
         </div>
@@ -247,7 +281,7 @@
 
         <p>Este botón es desplegado con &lt;button&gt; y usa un evento onclick para llamar a una función JavaScript.</p>
       </section>
-
+      <hr>
       <section id="embiframe" class="apilar">
         <!-- Esta sección muestra contenido embebido con iframe -->
 
@@ -269,7 +303,7 @@
         <!-- Ejemplo de embeber un archivo de texto guardado como archivo en la carpeta Docs -->
 
       </section>
-
+      <hr>
       <section id="multimedia" class="apilar">
         <!-- Esta sección muestra contenido multimedia con audio y video -->
 
@@ -295,7 +329,7 @@
 
         </video>
       </section>
-
+      <hr>
       <section id="targets" class="apilar">
         <!-- Esta sección muestra el uso de diferentes targets en enlaces -->
 
@@ -314,7 +348,7 @@
         <!-- el target _parent dentro del archivo hará que trate de abrirse el link dentro del iframe, mientras que el target _top hará que se abra en la ventana o pestaña principal -->
 
       </section>
-
+      <hr>
       <article id="article">
         <!-- Esta sección muestra el uso del elemento article -->
 
@@ -322,7 +356,7 @@
         <p>El elemento &lt;article&gt; representa una composición independiente en un documento, página web, aplicación
           o sitio, destinada a ser distribuida o reutilizada de forma independiente.</p>
       </article>
-
+      <hr>
       <section id="semantica">
         <!-- Esta sección introduce las clases de semántica de HTML -->
 
@@ -350,14 +384,14 @@
             describen el significado del contenido.</dd>
         </dl>
       </section>
-
+      <hr>
       <section>
         <!-- Esta sección muestra el uso del elemento nav en la barra lateral izquierda -->
 
         <h2 class="subrayado">Elemento de la sección de navegación &lt;nav&gt;</h2>
         <p>Mi sección de navegación esta representada en la barra lateral izquierda.</p>
       </section>
-
+      <hr>
       <section id="ElemPres">
         <!-- Esta sección explica los elementos presentacionales obsoletos -->
 
@@ -514,7 +548,6 @@
           </tbody>
         </table>
       </section>
-
       <section id="EjemplosDelS">
         <!-- Esta sección muestra ejemplos del uso de los elementos <del> y <s> -->
 
@@ -529,7 +562,7 @@
         <p>Precio actual: $80</p>
         <p>Sin necesidad de registrar un cambio, menor valor semántico de &lt;s&gt;.</p>
       </section>
-
+      <hr>
       <section id="glosario">
         <!-- Esta sección contiene un glosario de términos usando el elemento <dt> -->
 
@@ -547,7 +580,7 @@
           </dd>
         </dl>
       </section>
-
+      <hr>
       <section id="quote">
         <!-- Esta sección muestra el uso del elemento blockquote para citas largas -->
 
@@ -559,7 +592,7 @@
         <p>"Con el amor no se juega. Hay muchos que empiezan por broma y terminan quemándose"</p>
         <footer>— Carlo Dossi</footer>
       </section>
-
+      <hr>
       <section id="cite">
         <!-- Esta sección muestra el uso del elemento cite para citas bibliográficas -->
 
@@ -569,7 +602,7 @@
         <!-- El ELEMENTO cite se usa para títulos de obras como libros, películas, artículos, etc. -->
 
       </section>
-
+      <hr>
       <section id="q">
         <!-- Esta sección muestra el uso del elemento q para citas en el renglón -->
 
@@ -580,7 +613,7 @@
         <!-- El elemento q se usa para citas cortas dentro de un párrafo -->
 
       </section>
-
+      <hr>
       <section id="abbr">
         <!-- Esta sección muestra el uso del elemento abbr para abreviaturas -->
 
@@ -589,7 +622,7 @@
         <!-- El elemento abbr se usa para abreviaturas -->
 
       </section>
-
+      <hr>
       <section id="address">
         <!-- Esta sección muestra el uso del elemento address para información de contacto -->
 
@@ -609,7 +642,7 @@
 
         </address>
       </section>
-
+      <hr>
       <section id="time">
         <!-- Esta sección muestra el uso del elemento time y el atributo datetime para fechas y horas -->
 
@@ -621,7 +654,7 @@
         <p>El formato a usar dentro del atrivuto datetime es YYYY-MM-DDThh:mm:ss para que la informacion sea legible
           para la computadora.</p>
       </section>
-
+      <hr>
       <section id="supsub">
         <!-- Esta sección muestra el uso de los elementos sup y sub para superíndices y subíndices -->
         <!-- El elemento sup se usa comunmente para exponentes, letras superiores y números ordinales -->
@@ -633,7 +666,7 @@
         <p class="ejemplo-s-del">CO<sub>2</sub></p>
         <p>Subíndice, Uso común: fórmulas químicas, notas al pie, variables con índices.</p>
       </section>
-
+      <hr>
       <section id="u">
         <!-- Esta sección muestra el uso del elemento u para resaltar texto -->
         <!-- El elemento u se usa para resaltar texto, normalmente por algún error a visualizar -->
@@ -643,7 +676,7 @@
           <u>incortectos</u> <u>pronusiacion</u> <u>herrores</u>.
         </p>
       </section>
-
+      <hr>
       <section id="precode">
         <!-- Esta sección muestra el uso de los elementos pre y code para resaltar texto de código -->
 
@@ -652,7 +685,7 @@
             <code>body { color: red; }</code>
         </pre>
       </section>
-
+      <hr>
       <section id="ruby">
         <!-- Esta sección muestra el uso de los elementos ruby, rt y rp para anotaciones de pronunciación -->
 
@@ -669,7 +702,7 @@
         <p>Se usa rp para proporcionar paréntesis alrededor de la pronunciación en caso de que el navegador no soporte
           ruby.</p>
       </section>
-
+      <hr>
       <section id="formulario">
         <!-- Esta sección muestra un formulario de contacto básico -->
 
@@ -696,7 +729,7 @@
         <p>Para el recuadro más grande se usa &lt;textarea&gt; que permite ingresar texto multilínea. Con placeholder se
           puede mostrar un texto guía dentro del recuadro.</p>
       </section>
-
+      <hr>
       <section id="formtab">
         <!-- Esta sección resume los elementos clave de formularios y tablas -->
 
@@ -706,7 +739,7 @@
           cada atributo y mostrando ejemplos prácticos para referencia rápida.
         </p>
         <article aria-labelledby="forms">
-          <h3 id="forms">📝 Formularios</h3>
+          <h3 id="forms">Formularios</h3>
           <ul>
             <!-- Acá muestro como quedaría el código para un formulario básico y luego doy el ejemplo literal como codigo en mi html -->
 
@@ -842,7 +875,7 @@
           </ul>
         </article>
         <article aria-labelledby="tables">
-          <h3 id="tables">📊 Tablas</h3>
+          <h3 id="tables">Tablas</h3>
           <ul>
             <li>
               <b>&lt;table&gt;</b>: estructura principal.
@@ -886,7 +919,7 @@
               <b>colspan</b>: permite que una celda abarque varias columnas.
             </li>
           </ul>
-          <table class="table">
+          <table id="tabla" class="table">
             <caption>Notas de examen:</caption>
             <thead>
               <tr>
@@ -911,6 +944,141 @@
             </tfoot>
           </table>
         </article>
+      </section>
+      <hr>
+      <section id="css">
+        <h2 class="subrayado">A partir de aca me explayo en CSS</h2>
+        <h3>¿Qué es CSS?:</h3>
+        <p class="sangría">CSS significa <b>Hoja de estilos en cascada</b>, es un lenguaje de marcado exclusivamente
+          para la
+          presentacion
+          visual del diseño web.</p>
+        <p class="sangría">Puede compararse esta dinámica a la construcción de una casa, HTML para la estructura,
+          muebles, puertas y
+          ventanas, y CSS para la decoración y estilo.</p>
+        <p class="sangría">Debido a su naturaleza en cascada, los estilos <strong>se heredan y pueden ser
+            sobreescritos</strong>. De eso
+          se encarga el sistema de especificidad y orden de aparición (este decide qué reglas se aplican cuando varias
+          compiten). </p>
+        <p class="sangría">Por
+          ejemplo el atributo
+          color aplicado a un &lt;p&gt; afecta a todos sus descendientes, sobreescribiendo al color elegido para TODO el
+          contenido (&lt;body&gt;).</p>
+        <hr>
+        <h3>Anatomía básica de CSS:</h3>
+        <p class="sangría">El estilo de una pagina es determinado por varias reglas de CSS, las reglas de CSS se
+          componen por un
+          <strong>selector</strong> y un <strong>bloque de declaraciones</strong> (usando los "{" y "}" para
+          agruparlas).:
+        </p>
+        <pre>
+          <code>
+<span class="tokens">selector</span> <span class="tokenp">{</span>
+  <span class="tokenprop">propiedad</span><span class="tokenp">:</span> valor<span class="tokenp">;</span> <span class="tokenp">}</span>
+          </code>
+        </pre>
+        <p class="sangría">Hay selectores de tipo (p, body, section), de clases (.clase) e ID (#id).</p>
+        <p class="sangría">La propiedad es una palabra que especifica una característica visual, como color o tamaño. Y
+          el valor es una configuración específica aplicada a dicha propiedad.</p>
+        <p class="sangría">Despues de cada propiedad van dos puntos y despues del valor va punto y coma.</p>
+        <hr>
+        <h3>Función del elemento meta viewport:</h3>
+        <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+        <p>El elemento meta viewport es crucial. El contenido "width=device-width" indica al navegador ajustarse a la
+          pantalla del dispositivo,
+          mientras que "initial-scale=1.0" establece el nivel de zoom inicial. Esto asegura un diseño responsivo y
+          versátil.</p>
+        <p>Es altamente desaconsejable usar user-scalable=no porque no permite el uso de zoom, que tiene implicaciones
+          de
+          accesibilidad para el usuario</p>
+        <hr>
+        <h3>Estilos default de elementos HTML</h3>
+        <p>Hay elementos que vienen con estilos predeterminados aplicados por el navegador, como márgenes, paddings y
+          colores. Pueden llegar a variar de navegador en navegador (Por ej: &lt;h1&gt;, &lt;a&gt;, &lt;ul&gt;, etc.)
+        </p>
+        <hr>
+        <h3>Aplicaciones de CSS </h3>
+        <p>Puede aplicarse estilos de CSS de tres formas, En linea, Interno y Externo</p>
+        <p>El uso de CSS en linea o interno es difícil de mantener y no es recomendable para proyectos grandes. Por eso
+          se espera que se trabaje siempre con archivos externos (como styles.css) ya que esto mejora la organización y
+          reutilización del código. Para que el archivo de estilos externos funcione correctamente, debe estar vinculado
+          al documento HTML mediante con el atriburo "rel" dentro de la etiqueta &lt;link&gt; en la sección
+          &lt;head&gt;.</p>
+        <hr>
+        <h3>Funcionamiento de las propiedades height y width:</h3>
+        <p>Height y width son propiedades CSS que controlan la altura y el ancho de un elemento. Las magnitudes que usan
+          son: pixeles (px), porcentajes (%), unidades de viewport (vw, vh) u otras.</p>
+        <h3>Orden de prioridad</h3>
+        <p>CSS prioriza las propiedades en este orden:</p>
+        <ol>
+          <li>min-width y min-height tienen la mayor prioridad</li>
+          <li>max-width y max-height restringen las dimensiones si se exceden sus límites</li>
+          <li>width y height son las propiedades base</li>
+        </ol>
+        <p>Ejemplo: Si estableces width: 600px y max-width: 500px, el elemento tendrá 500px de ancho.</p>
+        <hr>
+        <h3>Diferentes combinadores de CSS</h3>
+        <p>Los combinadores de CSS permiten seleccionar elementos en relación con otros elementos. Los más comunes son:
+        </p>
+        <ul>
+          <li>Combinador descendiente (espacio): Selecciona elementos que son descendientes de otro elemento.</li>
+          <pre><code><span class="tokens">div p</span> <span class="tokens">{</span> <span class="tokenprop">color: blue;</span> <span class="tokenp">}</span></code></pre>
+          <li>Combinador hijo (>): Selecciona elementos que son hijos directos de otro elemento.</li>
+          <pre><code><span class="tokens">div > p</span> <span class="tokens">{</span> <span class="tokenprop">color: blue;</span> <span class="tokenp">}</span></code></pre>
+          <li>Combinador hermano adyacente (+): Selecciona elementos hermanos inmediatos.</li>
+          <pre><code><span class="tokens">div + p</span> <span class="tokens">{</span> <span class="tokenprop">color: blue;</span> <span class="tokenp">}</span></code></pre>
+          <li>Combinador hermano general (~): Selecciona todos los hermanos posteriores a un elemento.</li>
+          <pre><code><span class="tokens">div ~ p</span> <span class="tokens">{</span> <span class="tokenprop">color: blue;</span> <span class="tokenp">}</span></code></pre>
+        </ul>
+        <hr>
+        <h3>Elementos inline y de bloque</h3>
+        <p>Dentro de un sitio web existen elementos inline y de bloque. Esta propiedad puede ser utilizada para cambiar
+          el comportamiento de los elementos del documento.</p>
+        <section class="borde">
+          <h4>Elementos de bloque</h4>
+          <ul>
+            <li>Ocupan todo el ancho de su contenedor.</li>
+            <li>Comienzan en una nueva línea.</li>
+            <li>Propiedad CSS predeterminada: display: block;</li>
+            <li>Ideales para estructurar una página web y apilar contenido verticalmente.</li>
+            <li>Ejemplos: &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;, &lt;ul&gt;, &lt;section&gt;.</li>
+          </ul>
+        </section>
+        <h4>Elementos inline</h4>
+        <ul>
+          <li><span class="borde">Solo ocupan el ancho que necesitan.</span></li>
+          <li>Fluyen con el contenido, apareciendo en la misma línea que otros elementos.</li>
+          <li>Propiedad CSS predeterminada: display: inline;</li>
+          <li>Útiles para estilizar pequeñas porciones de texto o contenido dentro de una línea.</li>
+          <li>Ejemplos: &lt;span&gt;, &lt;a&gt;, &lt;img&gt;.</li>
+        </ul>
+        <section class="Resaltar">
+          <h3>Propiedad inline-block:</h3>
+          <p>La propiedad display: inline-block; combina características de ambos tipos de elementos. Permite que un
+            elemento se comporte como un bloque (aceptando dimensiones como width y height) pero fluya en línea con
+            otros
+            elementos.</p>
+        </section>
+        <hr>
+        <h3>Margin y Padding:</h3>
+        <p>Margin y padding son propiedades que <strong>controlan el espacio alrededor y dentro de los
+            elementos.</strong></p>
+        <ul>
+          <li>Margin: Espacio exterior alrededor del elemento.</li>
+          <li>Padding: Espacio interior dentro del elemento.</li>
+        </ul>
+        <p>Se puede modificar el margin y padding agregando un <span class="Resaltar">-top/-bottom/-left/-right</span>
+          para cada lado respectivamente.
+        </p>
+        <p>Sin embargo, la notación abreviada permite especificar uno, dos, tres o cuatro valores, con un orden
+          específico:</p>
+        <ul>
+          <li><span class="subrayar">Un valor:</span> Aplica a los cuatro lados.</li>
+          <li><span class="subrayar">Dos valores:</span> Superior/Inferior, Izquierdo/Derecho.</li>
+          <li><span class="subrayar">Tres valores:</span> Superior, Izquierdo/Derecho, Inferior.</li>
+          <li><span class="subrayar">Cuatro valores:</span> Superior, Derecho, Inferior, Izquierdo (en sentido horario).
+          </li>
+        </ul>
       </section>
     </main>
   </div>
